@@ -147,12 +147,22 @@ footer p{margin:.4rem 0 0;max-width:72ch}
 .top a[data-r]{text-decoration:none;font-weight:500;padding:.3rem 0;border-bottom:2px solid transparent}
 .top a[aria-current=page]{font-weight:600;border-bottom-color:var(--accent)}
 .page[hidden]{display:none}
-.panel .lede{font-family:"Bricolage Grotesque","Figtree",sans-serif;font-size:clamp(1.35rem,2.6vw,1.75rem);line-height:1.25;font-weight:500;max-width:22ch}
+.panel .lede{font-family:"Bricolage Grotesque","Figtree",sans-serif;font-size:clamp(1.35rem,2.6vw,1.75rem);line-height:1.25;font-weight:500;max-width:30ch}
 .more-toggle{font:inherit;font-weight:600;background:none;border:0;padding:.5rem 0;margin-top:1rem;color:var(--ink);cursor:pointer;text-decoration:underline;text-decoration-color:var(--accent);text-decoration-thickness:2px;text-underline-offset:4px}
 .extra{margin-top:1.25rem}
 .extra .facts{margin-top:0}
 .fair{color:var(--muted);margin:1.25rem 0 0;max-width:70ch}
 tr.hl th{box-shadow:inset 4px 0 0 var(--accent)}
+.wide{grid-column:1/-1}
+.bar{height:6px;background:var(--line);border-radius:99px;overflow:hidden;margin:0 0 1.25rem}
+.bar i{display:block;height:100%;background:var(--accent);transition:width .3s}
+.qnav{margin-top:1.25rem}
+.qnav .opt,#again{font-size:.95rem;padding:.5rem 1rem;border-radius:999px}
+.rk{font-size:.85rem;font-weight:600;color:var(--accent)}
+.why{list-style:none;margin:.5rem 0 .6rem;padding:0;display:grid;gap:.15rem}
+.why li{padding-left:1.4rem;position:relative}
+.why li::before{content:"\2713";position:absolute;left:0;color:var(--accent);font-weight:700}
+@media (prefers-reduced-motion:reduce){.bar i{transition:none}}
 </style>
 </head>
 <body>
@@ -192,11 +202,23 @@ tr.hl th{box-shadow:inset 4px 0 0 var(--accent)}
       <p class="src">Sources : <a href="https://dotesports.com/general/news/discord-global-age-checks-verification" target="_blank" rel="noopener">Dot Esports</a>, <a href="https://techcrunch.com/2026/09/22/discords-age-verification-era-is-upon-us-despite-community-backlash/" target="_blank" rel="noopener">TechCrunch</a>, <a href="https://discord.com/blog/getting-global-age-assurance-right-what-we-got-wrong-and-whats-changing" target="_blank" rel="noopener">blog de Discord</a></p>
     </div>
     <div class="facts">
-      <article class="fact"><h3>Une fuite liée à la vérification d'identité</h3><p>En 2025, un prestataire de Discord a été piraté. Les données d'environ 70 000 utilisateurs ont pu être exposées, dont des photos de pièces d'identité et des selfies. Source : <a href="https://techcrunch.com/2026/09/22/discords-age-verification-era-is-upon-us-despite-community-backlash/" target="_blank" rel="noopener">TechCrunch</a>.</p></article>
+      <article class="fact"><h3>Au moins 4 incidents de sécurité depuis 2023</h3><p>Piratage d'un agent de support en 2023, fuite d'un service tiers de liens d'invitation la même année, compromission d'un prestataire de support en septembre 2025 et exposition d'un prestataire de vérification d'âge début 2026. Chronologie complète dans « Afficher plus ». Sources : <a href="https://techcrunch.com/2026/09/22/discords-age-verification-era-is-upon-us-despite-community-backlash/" target="_blank" rel="noopener">TechCrunch</a>.</p></article>
       <article class="fact"><h3>Une plateforme fermée</h3><p>Les messages texte ne sont pas chiffrés de bout en bout. Règles, historique et données de ta communauté dépendent d'une seule entreprise, qui peut changer les conditions du jour au lendemain.</p></article>
     </div>
     <div class="extra" id="extra" hidden>
       <div class="facts">
+        <article class="fact wide"><h3>Chronologie des incidents de sécurité liés à Discord</h3>
+          <ul class="steps" style="margin-top:1rem">
+            <li><b>Mars 2023 — Compte d'un agent de support piraté</b>Un accès non autorisé au système de tickets a exposé les e-mails, échanges et pièces jointes d'environ 180 personnes, dont au moins une pièce d'identité ou un permis. Discord a fermé l'accès et averti les personnes concernées. Source : notification à l'Office of the Maine Attorney General, relayée par <a href="https://blog.internxt.com/discord-data-breach/" target="_blank" rel="noopener">Internxt</a>.</li>
+            <li><b>Août 2023 — Discord.io, service tiers de liens d'invitation</b>Ce site indépendant (non exploité par Discord) a été piraté : environ 760 000 comptes avec pseudos, e-mails, adresses de facturation et mots de passe hachés. Le service a fermé après l'incident. Rappelle les risques des outils non officiels connectés à un compte Discord.</li>
+            <li><b>Septembre 2025 — Prestataire de support piraté</b>Détails ci-dessous.</li>
+            <li><b>Février 2026 — Persona, prestataire de vérification d'âge</b>Des chercheurs ont trouvé des composants du prestataire exposés publiquement, révélant des détails sur le fonctionnement du système de vérification d'âge de Discord. Persona affirme qu'aucune donnée personnelle n'a été exposée ; Discord a mis fin à ce partenariat après la polémique. Source : <a href="https://breachhistory.com/blog/discord-data-breaches-full-timeline-through-2026" target="_blank" rel="noopener">BreachHistory</a>.</li>
+          </ul>
+          <p style="margin-top:1rem">D'autres épisodes circulent sans confirmation officielle : des bases de messages publics aspirés par des services tiers (Spy.pet, RestoreCord, un scrapeur estonien en 2025), et une revendication de janvier 2026 (« HawkSec », environ 78,5 millions de fichiers) non vérifiée. Un dépôt de juin 2026 annonçant 10 millions de comptes touchés dans le Maine s'est révélé être un canular.</p></article>
+        <article class="fact wide"><h3>Septembre 2025 : ce qui a fuité, et ce qui est resté à l'abri</h3>
+          <p><b>Exposé :</b> nom, pseudo Discord, e-mail et coordonnées fournies, informations de paiement limitées (type de paiement, quatre derniers chiffres de la carte, historique d'achats), adresses IP, messages et pièces jointes envoyés au support ou à l'équipe Trust &amp; Safety.</p>
+          <p><b>Pas touché :</b> numéros de carte complets et CVV, adresse postale, mots de passe et données d'authentification, messages et activité sur Discord en dehors des échanges avec le support.</p>
+          <p>Discord a coupé l'accès du prestataire, lancé une enquête avec un cabinet de forensique et prévenu les forces de l'ordre. Les personnes concernées ont reçu un e-mail avec les numéros de tickets touchés ; l'incident a été annoncé publiquement le 3 octobre. Les pirates revendiquent des volumes bien plus élevés, ce que Discord conteste. Sources : e-mail officiel de Discord aux personnes concernées, <a href="https://discord.com/press-releases/update-on-security-incident-involving-third-party-customer-service" target="_blank" rel="noopener">communiqué de Discord</a>.</p></article>
         <article class="fact"><h3>Un plan passé en force ?</h3><p>Le plan annoncé en février exigeait une estimation faciale de l'âge ou un scan de pièce d'identité pour les comptes non confirmés. Après les critiques sur la vie privée, Discord l'a retardé, puis relancé sous une forme remaniée. Source : <a href="https://www.engadget.com/2265924/discord-rolls-out-its-revised-age-verification-policy/" target="_blank" rel="noopener">Engadget</a>.</p></article>
         <article class="fact"><h3>Des adultes mal classés</h3><p>Le classement repose sur des estimations tirées de signaux d'usage. Discord reconnaît que des adultes peuvent être rangés à tort dans un autre groupe. On peut consulter son groupe et, si besoin, confirmer son âge.</p></article>
         <article class="fact"><h3>Des règles qui varient selon le pays</h3><p>L'estimation automatique n'est pas disponible au départ au Royaume-Uni et en Australie, où les exigences sont différentes. Ailleurs, la mesure suit de nouvelles lois locales.</p></article>
@@ -211,7 +233,7 @@ tr.hl th{box-shadow:inset 4px 0 0 var(--accent)}
     <article class="panel pm">
       <span class="badge">Notre recommandation</span>
       <h2>Proton Meet</h2>
-      <p class="lede">Le plus proche de Discord, sécurisé et accessible.</p>
+      <p class="lede">Contient de multiples fonctionnalités similaires à Discord, sécurisé et accessible.</p>
       <ul>
         <li>Appels audio et vidéo, chat et partage d'écran chiffrés de bout en bout</li>
         <li>Salons de réunion permanents, planification via Proton Calendar</li>
@@ -262,7 +284,7 @@ tr.hl th{box-shadow:inset 4px 0 0 var(--accent)}
 <div class="page" id="p-quiz" hidden>
   <section class="wrap blk" aria-labelledby="t-quiz">
     <h2 class="sec" id="t-quiz">Trouve ton alternative</h2>
-    <p class="lead">Trois questions, deux recommandations.</p>
+    <p class="lead">Cinq questions, trois recommandations avec les raisons du choix.</p>
     <div class="quiz" id="quiz" aria-live="polite"></div>
 
     <div class="mig" aria-labelledby="t-mig">
@@ -281,7 +303,7 @@ tr.hl th{box-shadow:inset 4px 0 0 var(--accent)}
 
 <footer>
   <div class="wrap">
-    <p>Page mise à jour le 23/09/2026 à 17h47.</p>
+    <p>Page mise à jour le 24/09/2026 à 17:50:07.</p>
     <p>Fuites : incidents publics majeurs que nous avons pu recenser, liste non exhaustive. « Confiance » est une note éditoriale sur 5 fondée sur le code ouvert, le chiffrement, les audits et l'historique de fuites. Les fonctionnalités évoluent vite : vérifie les détails sur le site de chaque service avant de migrer.</p>
   </div>
 </footer>
@@ -291,9 +313,9 @@ var PL={A:["pA","iOS / macOS"],a:["pa","Android"],W:["pW","Windows"],x:["px","Li
 TL=["","","Faible","Moyenne","Élevée","Très élevée"],SY=["✗","✓","~"],SL=["Non","Oui","Partiel"];
 /* tb = [chiffré de bout en bout, vocal, vidéo, open source, gratuit] ; 0 non, 1 oui, 2 partiel */
 var S=[
-{id:"dc",n:"Discord (référence)",c:"2015",lk:1,t:2,tb:[2,1,1,0,1]},
-{id:"pm",f:1,n:"Proton Meet",c:"2026",lk:0,t:4,p:"Aaw",pr:"Gratuit (1 h, 50 pers.) ; Pro dès 7,99 $/mois",tb:[1,1,1,1,1]},
-{id:"sx",f:1,n:"SimpleX",c:"2022",lk:0,t:5,p:"AaWx",pr:"Gratuit",tb:[1,1,1,1,1]},
+{id:"dc",n:"Discord (référence)",c:"2015",lk:4,t:2,tb:[2,1,1,0,1]},
+{id:"pm",f:1,n:"Proton Meet",k:"Visioconférence chiffrée",u:"https://proton.me/meet",c:"2026",lk:0,t:4,p:"Aaw",pr:"Gratuit (1 h, 50 pers.) ; Pro dès 7,99 $/mois",tb:[1,1,1,1,1]},
+{id:"sx",f:1,n:"SimpleX",k:"Messagerie sans identifiant",u:"https://simplex.chat",c:"2022",lk:0,t:5,p:"AaWx",pr:"Gratuit",tb:[1,1,1,1,1]},
 {id:"st",n:"Stoat",k:"Le plus proche de Discord (ex-Revolt)",c:"2021",lk:0,t:3,p:"AaWxw",pr:"Gratuit",tb:[0,1,2,1,1],x:"self",u:"https://stoat.chat",
  d:"Serveurs, salons, rôles, emojis : l'organisation ressemble à celle de Discord. Open source, on peut l'héberger soi-même.",pro:"Prise en main immédiate pour les habitués de Discord.",con:"Pas de chiffrement de bout en bout ; projet jeune, porté par une petite équipe."},
 {id:"el",n:"Element",k:"Réseau Matrix, décentralisé",c:"2014 (Matrix)",lk:1,lt:"compromission des serveurs matrix.org en 2019",t:4,p:"AaWxw",pr:"Gratuit ; hébergement pro payant",tb:[1,1,1,1,1],x:"e2e self",u:"https://element.io",
@@ -312,15 +334,23 @@ var S=[
  d:"Appels et messages passent directement d'un appareil à l'autre, sans serveur central ni compte. Projet du GNU.",pro:"Aucune infrastructure à dépendre, chiffrement de bout en bout.",con:"Qualité d'appel variable ; peu adapté aux grandes communautés."},
 {id:"ma",n:"Mattermost",k:"Chat d'équipe auto-hébergé",c:"2016",lk:0,t:4,p:"AaWxw",pr:"Édition communautaire gratuite ; offres payantes",tb:[0,2,2,2,2],x:"self",u:"https://mattermost.com",
  d:"Canaux, fils de discussion et intégrations, pensé pour les équipes. On l'héberge chez soi.",pro:"Solide et complet pour un groupe organisé.",con:"Orienté entreprise ; certaines fonctions sont payantes."},
+{id:"fl",n:"Flackle",k:"Vocal et vidéo chiffrés, encore en bêta fermée",c:"2026",lk:0,t:3,p:"w",pr:"Gratuit (liste d'attente)",tb:[2,1,1,0,1],x:"",u:"https://flackle.com",
+ d:"Une alternative à Discord en développement : appels vocaux et vidéo chiffrés de bout en bout, aucune vérification d'identité ni donnée biométrique demandée. Encore en bêta fermée, accessible sur liste d'attente.",
+ pro:"Appels chiffrés de bout en bout, refuse la vérification d'identité, aucune revente de données.",
+ con:"Pas encore public (liste d'attente) ; messages texte non chiffrés de bout en bout ; auto-hébergement seulement prévu pour plus tard."},
+{id:"ra",n:"RootApp",k:"Plateforme extensible pour communautés de jeu",c:"2025",lk:0,t:2,p:"Aaw",pr:"Gratuit",tb:[0,1,1,0,1],x:"",u:"https://www.rootapp.com",
+ d:"Une alternative à Discord orientée jeu, avec des mini-applications pour organiser sa communauté : suivi de tâches, planification d'événements, mur de stickers.",
+ pro:"Aucune revente de données ni entraînement d'IA sur le contenu ; apps intégrées utiles pour les communautés de jeu.",
+ con:"Pas de chiffrement de bout en bout ; le site marketing utilise des cookies publicitaires ciblés (avec consentement)."},
 {id:"rc",n:"Rocket.Chat",k:"Messagerie ouverte pour organisations",c:"2015",lk:0,t:3,p:"AaWxw",pr:"Gratuit auto-hébergé ; offres payantes",tb:[2,2,2,2,2],x:"self",u:"https://rocket.chat",
  d:"Canaux, appels vidéo, ponts vers d'autres messageries. Chiffrement de bout en bout optionnel dans certains salons privés.",pro:"Très personnalisable, ponts vers d'autres services.",con:"Beaucoup d'options à configurer ; des failles ont été corrigées par le passé."}
 ];
-S[0].lt="prestataire piraté en 2025 (environ 70 000 personnes)";
+S[0].lt="4 incidents confirmés depuis 2023 (détail dans « Afficher plus » sur l'accueil)";
 function ic(s){return s.split("").map(function(c){var p=PL[c];return '<svg class="pi" role="img" aria-label="'+p[1]+'"><title>'+p[1]+'</title><use href="#'+p[0]+'"/></svg>'}).join("")}
 function dots(n){var h="";for(var i=1;i<=5;i++)h+='<i'+(i<=n?' class="on"':'')+'></i>';return '<span class="dots" role="img" aria-label="Confiance '+n+' sur 5">'+h+'</span>'}
 function meta(s){return '<dl class="meta"><div><dt>Créé</dt><dd>'+s.c+'</dd></div><div><dt>Fuites connues</dt><dd>'+(s.lk?s.lk+' : '+s.lt:'Aucune majeure connue')+'</dd></div><div><dt>Confiance</dt><dd>'+dots(s.t)+' '+TL[s.t]+'</dd></div><div><dt>Plateformes</dt><dd>'+ic(s.p)+'</dd></div><div><dt>Prix</dt><dd>'+s.pr+'</dd></div></dl>'}
 document.querySelectorAll(".meta-slot").forEach(function(e){e.innerHTML=meta(S.filter(function(s){return s.id===e.dataset.id})[0])});
-document.getElementById("rows").innerHTML=S.filter(function(s){return s.u}).map(function(s){return '<li class="row" data-tags="'+s.x+'"><details><summary><span><h3>'+s.n+'</h3><span class="kind">'+s.k+'</span></span>'+dots(s.t)+'</summary><div class="body"><p>'+s.d+'</p><ul class="pc"><li class="pro">'+s.pro+'</li><li class="con">'+s.con+'</li></ul>'+meta(s)+'<a class="visit" href="'+s.u+'" target="_blank" rel="noopener">Site officiel</a></div></details></li>'}).join("");
+document.getElementById("rows").innerHTML=S.filter(function(s){return !s.f&&s.u}).map(function(s){return '<li class="row" data-tags="'+s.x+'"><details><summary><span><h3>'+s.n+'</h3><span class="kind">'+s.k+'</span></span>'+dots(s.t)+'</summary><div class="body"><p>'+s.d+'</p><ul class="pc"><li class="pro">'+s.pro+'</li><li class="con">'+s.con+'</li></ul>'+meta(s)+'<a class="visit" href="'+s.u+'" target="_blank" rel="noopener">Site officiel</a></div></details></li>'}).join("");
 document.getElementById("tbl").innerHTML='<caption>✓ oui · ✗ non · ~ partiel ou selon l\'offre. Fuites : nombre d\'incidents majeurs connus.</caption><thead><tr><th scope="col" style="text-align:left;padding-left:1.25rem">Service</th><th scope="col">Créé</th><th scope="col">Fuites</th><th scope="col">Confiance</th><th scope="col">Chiffré de bout en bout</th><th scope="col">Vocal</th><th scope="col">Vidéo</th><th scope="col">Open source</th><th scope="col">Gratuit</th></tr></thead><tbody>'+S.map(function(s){return '<tr'+(s.id==="dc"?' class="ref"':s.f?' class="hl"':'')+'><th scope="row">'+s.n+'</th><td>'+s.c+'</td><td>'+s.lk+'</td><td>'+dots(s.t)+'</td>'+s.tb.map(function(v){return '<td class="v'+v+'" aria-label="'+SL[v]+'">'+SY[v]+'</td>'}).join("")+'</tr>'}).join("")+'</tbody>';
 
 /* Filtres */
@@ -331,22 +361,53 @@ chips.forEach(function(c){c.addEventListener("click",function(){
   rows.forEach(function(r){r.hidden=f!=="all"&&r.dataset.tags.split(" ").indexOf(f)<0});
 })});
 
-/* Quiz */
+/* Quiz : [question, [[réponse, points, raison]]] */
 var Q=[
-["Tu veux surtout…",[["Des serveurs, salons et rôles comme sur Discord",{st:3,el:3,rc:1,ma:1}],["Discuter en privé avec mes proches",{sg:3,sx:3,se:2,ja:1}],["Faire des appels et des réunions",{pm:3,ja:1,el:1}],["Parler en vocal en jouant",{mu:3,ts:3}]]],
-["Quel niveau de confidentialité ?",[["Maximal : rien ne doit me relier à mon identité",{sx:3,se:3,ja:2}],["Chiffrement de bout en bout",{sg:2,el:2,pm:2,sx:1,se:1,ja:1}],["Peu importe, tant que ça marche",{st:2,ts:1,mu:1,zu:1,ma:1,rc:1}]]],
-["Prêt à gérer ton propre serveur ?",[["Oui, ça ne me fait pas peur",{el:2,st:1,mu:2,ts:1,zu:2,ma:2,rc:2}],["Non, je veux du prêt à l'emploi",{pm:2,sg:2,sx:1,se:1,ja:1,st:1}]]]
+["Tu veux surtout…",[
+ ["Une communauté avec serveurs, salons et rôles",{st:3,el:3,rc:1,ma:1,zu:1},"reprend l'organisation en serveurs et salons"],
+ ["Discuter en privé avec des proches",{sg:3,sx:3,se:2,ja:2},"pensé pour les conversations privées"],
+ ["Faire des appels et des réunions",{pm:3,ja:1,el:1,sg:1},"conçu pour les appels et les réunions"],
+ ["Parler en vocal en jouant",{mu:3,ts:3},"vocal léger à faible latence"],
+ ["Débattre par sujets, sur la durée",{zu:3,ma:1,el:1},"discussions organisées par sujets"]]],
+["Quelle taille pour ton groupe ?",[
+ ["Moins de 10 personnes",{sg:2,ja:2,sx:1,se:1,pm:1},"adapté aux petits groupes"],
+ ["Entre 10 et 100 personnes",{pm:1,st:1,el:1,sg:1,mu:1,se:1,sx:1},""],
+ ["Plus de 100, ouvert au public",{st:3,el:3,zu:1,rc:1,ma:1},"gère les grandes communautés ouvertes"]]],
+["Quel niveau de confidentialité ?",[
+ ["Maximal : rien ne doit me relier à moi",{sx:4,se:3,ja:2},"inscription sans numéro ni e-mail"],
+ ["Chiffrement de bout en bout",{sg:2,el:2,pm:2,sx:1,se:1,ja:1},"chiffrement de bout en bout"],
+ ["Peu importe, tant que ça marche",{st:2,ts:1,mu:1,zu:1,ma:1,rc:1},""]]],
+["Tu es prêt à héberger un serveur ?",[
+ ["Oui, ça ne me fait pas peur",{el:2,st:1,mu:2,ts:1,zu:2,ma:2,rc:2},"tu peux l'héberger toi-même"],
+ ["Non, je veux du prêt à l'emploi",{pm:2,sg:2,sx:1,se:1,ja:1,st:1},"prêt à l'emploi, sans serveur à gérer"]]],
+["Ce dont tu ne peux pas te passer",[
+ ["Vidéo et partage d'écran",{pm:3,el:2,ja:2,sg:1,st:1},"vidéo et partage d'écran"],
+ ["Un vocal de bonne qualité",{mu:2,ts:2,pm:1,st:1,el:1,sg:1},"vocal de bonne qualité"],
+ ["Un historique de texte facile à retrouver",{zu:3,ma:2,el:1,st:1},"historique de texte facile à retrouver"],
+ ["Bots et intégrations",{rc:2,ma:2,el:1,zu:1,st:1},"intégrations et ponts vers d'autres outils"]]]
 ];
-var qz=document.getElementById("quiz"),sc,qi;
+var qz=document.getElementById("quiz"),ch=[];
 function foc(){var h=qz.querySelector("h3");if(h){h.tabIndex=-1;h.focus()}}
-function ask(){var q=Q[qi];qz.innerHTML='<p class="qn">Question '+(qi+1)+' sur '+Q.length+'</p><h3>'+q[0]+'</h3><div class="opts">'+q[1].map(function(o,i){return '<button class="opt" data-i="'+i+'">'+o[0]+'</button>'}).join("")+'</div>';if(qi)foc()}
-function res(){var top=S.filter(function(s){return sc[s.id]}).sort(function(a,b){return sc[b.id]-sc[a.id]}).slice(0,2);
-  qz.innerHTML='<p class="qn">Ton résultat</p><div class="res">'+top.map(function(s){return '<div><h3>'+s.n+'</h3><p>'+(s.k||(s.id==="pm"?"Visioconférence chiffrée":"Messagerie sans identifiant"))+' · <a href="'+(s.u||(s.id==="pm"?"https://proton.me/meet":"https://simplex.chat"))+'" target="_blank" rel="noopener">Site officiel</a></p></div>'}).join("")+'</div><button class="opt" id="again">Refaire le quiz</button>';foc()}
-function start(){sc={};qi=0;ask()}
-qz.addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;
+function ask(){
+  var i=ch.length,q=Q[i];
+  qz.innerHTML='<div class="bar" role="progressbar" aria-label="Progression" aria-valuemin="0" aria-valuemax="'+Q.length+'" aria-valuenow="'+i+'"><i style="width:'+(i/Q.length*100)+'%"></i></div><p class="qn">Question '+(i+1)+' sur '+Q.length+'</p><h3>'+q[0]+'</h3><div class="opts">'+q[1].map(function(o,j){return '<button class="opt" data-i="'+j+'">'+o[0]+'</button>'}).join("")+'</div>'+(i?'<div class="qnav"><button class="opt" id="back">← Question précédente</button></div>':'');
+  if(i)foc();
+}
+function res(){
+  var sc={},wh={},RK=["Meilleure correspondance","Aussi adapté","À considérer"];
+  ch.forEach(function(j,i){var o=Q[i][1][j];for(var k in o[1]){sc[k]=(sc[k]||0)+o[1][k];if(o[1][k]>=2&&o[2])(wh[k]=wh[k]||[]).push(o[2])}});
+  var top=S.filter(function(s){return sc[s.id]}).sort(function(a,b){return sc[b.id]-sc[a.id]||b.t-a.t}).slice(0,3);
+  qz.innerHTML='<p class="qn">Ton résultat</p><div class="res">'+top.map(function(s,i){
+    return '<div><span class="rk">'+RK[i]+'</span><h3>'+s.n+'</h3><p>'+s.k+'</p>'+(wh[s.id]?'<ul class="why">'+wh[s.id].slice(0,3).map(function(w){return '<li>'+w+'</li>'}).join("")+'</ul>':'')+'<p><a href="'+s.u+'" target="_blank" rel="noopener">Site officiel</a> · <a href="#/comparatif">Voir dans le comparatif</a></p></div>'}).join("")+'</div><button class="opt" id="again">Refaire le quiz</button>';
+  foc();
+}
+function start(){ch=[];ask()}
+qz.addEventListener("click",function(e){
+  var b=e.target.closest("button");if(!b)return;
   if(b.id==="again"){start();return}
-  var o=Q[qi][1][+b.dataset.i][1];for(var k in o)sc[k]=(sc[k]||0)+o[k];
-  qi++;qi<Q.length?ask():res()});
+  if(b.id==="back"){ch.pop();ask();return}
+  ch.push(+b.dataset.i);ch.length<Q.length?ask():res();
+});
 start();
 
 /* Afficher plus / Réduire */
