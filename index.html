@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Quitter Discord : les meilleures alternatives</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230F7A63'/%3E%3Cpath d='M11 8h10v16H11z' fill='none' stroke='white' stroke-width='2.5'/%3E%3Ccircle cx='18' cy='16' r='1.5' fill='white'/%3E%3C/svg%3E">
+<title>Leave Discord: the best alternatives</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'>%3Crect width='32' height='32' rx='8' fill='%230F7A63'/%3E%3Crect x='9' y='6' width='4' height='19' rx='1' fill='white'/%3E%3Crect x='9' y='23' width='11' height='4' rx='1' fill='white'/%3E%3Cpath d='M13 7C23 7 25 10.5 25 15C25 19.5 23 20 13 20' fill='none' stroke='white' stroke-width='4.1' stroke-linecap='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
@@ -35,6 +35,7 @@ h1,h2,h3{font-family:"Bricolage Grotesque","Figtree",system-ui,sans-serif;line-h
 h2.sec{font-size:clamp(1.8rem,4vw,2.6rem)}
 .lead{color:var(--muted);max-width:58ch;margin:.75rem 0 0}
 section.blk{padding:4rem 0 0}
+[hidden]{display:none!important}
 
 .hero{padding:4.5rem 0 1rem}
 .hero h1{font-size:clamp(2.6rem,7.5vw,5.4rem);font-weight:700;max-width:14ch}
@@ -44,7 +45,6 @@ section.blk{padding:4rem 0 0}
 @keyframes in{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero h1,.hero p{animation:none}}
 
-/* Pourquoi quitter */
 .alert{background:var(--ink);color:var(--bg);border-radius:28px;padding:2rem 1.75rem;margin-top:1.75rem}
 .alert .tag{display:inline-block;background:var(--bg);color:var(--ink);font-weight:600;font-size:.95rem;border-radius:999px;padding:.25rem .85rem;margin:0 0 1rem}
 .alert h3{font-size:clamp(1.6rem,3.6vw,2.4rem);max-width:24ch}
@@ -56,13 +56,13 @@ section.blk{padding:4rem 0 0}
 .fact h3{font-size:1.35rem}
 .fact p{margin:.6rem 0 0;color:var(--muted)}
 
-/* Mis en avant */
 .feat{display:grid;gap:1.25rem;grid-template-columns:1fr;padding-top:4rem}
 @media (min-width:860px){.feat{grid-template-columns:1.25fr 1fr}}
 .panel{border-radius:28px;padding:2rem 1.75rem 1.75rem;display:flex;flex-direction:column;gap:1rem}
 .panel .badge{font-weight:600;font-size:.95rem;border-radius:999px;padding:.3rem .85rem;align-self:flex-start}
 .panel h2{font-size:clamp(2rem,4vw,2.9rem);font-weight:700}
 .panel p{margin:0;max-width:46ch}
+.panel .lede{font-family:"Bricolage Grotesque","Figtree",sans-serif;font-size:clamp(1.35rem,2.6vw,1.75rem);line-height:1.25;font-weight:500;max-width:30ch}
 .panel ul{margin:.25rem 0 0;padding:0;list-style:none;display:grid;gap:.5rem}
 .panel li{padding-left:1.5rem;position:relative}
 .panel li::before{content:"";position:absolute;left:0;top:.62em;width:.65rem;height:.65rem;border-radius:50%;background:currentColor;opacity:.55}
@@ -76,7 +76,6 @@ section.blk{padding:4rem 0 0}
 .sx .btn{background:var(--sx-accent);color:#062024}
 .note{font-size:.95rem;opacity:.8}
 
-/* Fiches : infos */
 .meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.75rem 1.5rem;margin:.5rem 0 0;font-size:.95rem}
 .meta dt{opacity:.7;font-size:.85rem}
 .meta dd{margin:0;display:flex;flex-wrap:wrap;align-items:center;gap:.4rem}
@@ -85,7 +84,6 @@ section.blk{padding:4rem 0 0}
 .dots i.on{opacity:1}
 .pi{width:1.35rem;height:1.35rem;fill:currentColor}
 
-/* Liste */
 .chips{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.75rem 0 .5rem}
 .chip,.opt{font:inherit;font-weight:500;font-size:.95rem;border:1.5px solid var(--line);background:transparent;color:var(--ink);padding:.45rem 1rem;border-radius:999px;cursor:pointer}
 .chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
@@ -109,7 +107,6 @@ details[open]>summary::after{transform:rotate(-135deg);margin-bottom:0}
 .pc .con::before{content:"\2212";color:var(--muted)}
 .visit{font-weight:600;text-underline-offset:4px;text-decoration-thickness:2px;text-decoration-color:var(--accent);justify-self:start}
 
-/* Comparatif */
 .tw{overflow-x:auto;margin-top:1.5rem;border-radius:20px;background:var(--surface)}
 table{border-collapse:collapse;width:100%;min-width:760px;font-size:.98rem}
 caption{text-align:left;padding:1rem 1.25rem .25rem;color:var(--muted);font-size:.9rem}
@@ -119,9 +116,9 @@ th[scope=row]{text-align:left;font-weight:600}
 th:first-child{padding-left:1.25rem}
 tr.ref{background:var(--bg)}
 tr.ref th{font-style:italic}
+tr.hl th{box-shadow:inset 4px 0 0 var(--accent)}
 .v1{color:var(--accent);font-weight:700}.v0,.v2{color:var(--muted)}
 
-/* Quiz */
 .quiz{background:var(--surface);border-radius:28px;padding:2rem 1.75rem;margin-top:1.75rem}
 .qn{margin:0 0 .5rem;color:var(--muted);font-size:.95rem}
 .quiz h3{font-size:1.7rem;margin-bottom:1.25rem}
@@ -132,6 +129,15 @@ tr.ref th{font-style:italic}
 .res div{border-left:4px solid var(--accent);padding:.1rem 0 .1rem 1rem}
 .res h3{margin:0 0 .2rem;font-size:1.6rem}
 .res p{margin:0;color:var(--muted)}
+.bar{height:6px;background:var(--line);border-radius:99px;overflow:hidden;margin:0 0 1.25rem}
+.bar i{display:block;height:100%;background:var(--accent);transition:width .3s}
+.qnav{margin-top:1.25rem}
+.qnav .opt,.opt.again{font-size:.95rem;padding:.5rem 1rem;border-radius:999px}
+.rk{font-size:.85rem;font-weight:600;color:var(--accent)}
+.why{list-style:none;margin:.5rem 0 .6rem;padding:0;display:grid;gap:.15rem}
+.why li{padding-left:1.4rem;position:relative}
+.why li::before{content:"\2713";position:absolute;left:0;color:var(--accent);font-weight:700}
+@media (prefers-reduced-motion:reduce){.bar i{transition:none}}
 .mig{margin-top:2.5rem}
 .mig h3{font-size:1.6rem}
 .steps{margin:1.25rem 0 0;padding:0;list-style:none;counter-reset:s;display:grid;gap:1rem;max-width:720px}
@@ -143,26 +149,18 @@ footer p{margin:.4rem 0 0;max-width:72ch}
 
 .top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
 .top nav{display:flex;flex-wrap:wrap;align-items:center;gap:.25rem 1.5rem;padding-top:.7rem;padding-bottom:.7rem}
-.brand{font-family:"Bricolage Grotesque","Figtree",sans-serif;font-weight:700;font-size:1.15rem;text-decoration:none;margin-right:auto}
+.brand{display:inline-flex;align-items:center;gap:.5rem;font-family:"Bricolage Grotesque","Figtree",sans-serif;font-weight:700;font-size:1.15rem;text-decoration:none;margin-right:auto}
+.brand svg{width:20px;height:20px;flex:none}
 .top a[data-r]{text-decoration:none;font-weight:500;padding:.3rem 0;border-bottom:2px solid transparent}
 .top a[aria-current=page]{font-weight:600;border-bottom-color:var(--accent)}
-.page[hidden]{display:none}
-.panel .lede{font-family:"Bricolage Grotesque","Figtree",sans-serif;font-size:clamp(1.35rem,2.6vw,1.75rem);line-height:1.25;font-weight:500;max-width:30ch}
+.langsw{display:inline-flex;gap:.3rem;border:1.5px solid var(--line);border-radius:999px;padding:.2rem}
+.langsw button{font:inherit;font-weight:600;font-size:.85rem;border:0;background:transparent;color:var(--muted);padding:.3rem .7rem;border-radius:999px;cursor:pointer}
+.langsw button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
 .more-toggle{font:inherit;font-weight:600;background:none;border:0;padding:.5rem 0;margin-top:1rem;color:var(--ink);cursor:pointer;text-decoration:underline;text-decoration-color:var(--accent);text-decoration-thickness:2px;text-underline-offset:4px}
 .extra{margin-top:1.25rem}
 .extra .facts{margin-top:0}
 .fair{color:var(--muted);margin:1.25rem 0 0;max-width:70ch}
-tr.hl th{box-shadow:inset 4px 0 0 var(--accent)}
 .wide{grid-column:1/-1}
-.bar{height:6px;background:var(--line);border-radius:99px;overflow:hidden;margin:0 0 1.25rem}
-.bar i{display:block;height:100%;background:var(--accent);transition:width .3s}
-.qnav{margin-top:1.25rem}
-.qnav .opt,#again{font-size:.95rem;padding:.5rem 1rem;border-radius:999px}
-.rk{font-size:.85rem;font-weight:600;color:var(--accent)}
-.why{list-style:none;margin:.5rem 0 .6rem;padding:0;display:grid;gap:.15rem}
-.why li{padding-left:1.4rem;position:relative}
-.why li::before{content:"\2713";position:absolute;left:0;color:var(--accent);font-weight:700}
-@media (prefers-reduced-motion:reduce){.bar i{transition:none}}
 </style>
 </head>
 <body>
@@ -172,19 +170,168 @@ tr.hl th{box-shadow:inset 4px 0 0 var(--accent)}
   <symbol id="pW" viewBox="0 0 24 24"><path d="M3 5.500 11 4.400V11H3zM12 4.250 21 3v8h-9zM3 12h8v6.600L3 17.500zM12 12h9v9l-9-1.250z"/></symbol>
   <symbol id="px" viewBox="0 0 24 24"><path d="M12 2.500c-2 0-3 1.800-3 4.200 0 1.400-.3 2.100-1.100 3.400C7 11.500 6 13.200 6 15.200c0 1.400.5 2.400 1.300 3-.4.500-1.300.6-1.300 1.300 0 1 1.700 1.500 3 1 .8-.3 1.200-.8 3-.8s2.200.5 3 .8c1.300.5 3 0 3-1 0-.7-.9-.8-1.300-1.300.8-.6 1.300-1.600 1.300-3 0-2-1-3.700-1.900-5.100-.8-1.300-1.100-2-1.100-3.400 0-2.400-1-4.200-3-4.200z"/></symbol>
   <symbol id="pw" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.700"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></g></symbol>
+  <symbol id="logo" viewBox="0 0 32 32"><rect width="32" height="32" rx="8" fill="var(--accent)"/><rect x="9" y="6" width="4" height="19" rx="1" fill="white"/><rect x="9" y="23" width="11" height="4" rx="1" fill="white"/><path d="M13 7C23 7 25 10.5 25 15C25 19.5 23 20 13 20" fill="none" stroke="white" stroke-width="4.1" stroke-linecap="round"/></symbol>
 </svg>
 
+<!-- ========================= ENGLISH ========================= -->
+<div id="site-en">
 <header class="top">
   <nav class="wrap" aria-label="Pages">
-    <a class="brand" href="#/">Quitter Discord</a>
-    <a href="#/" data-r="home">Accueil</a>
-    <a href="#/comparatif" data-r="comparatif">Comparatif</a>
-    <a href="#/quiz" data-r="quiz">Trouve ton alternative</a>
+    <a class="brand" href="#/home"><svg aria-hidden="true"><use href="#logo"/></svg>Leave Discord</a>
+    <a href="#/home" data-r="home">Home</a>
+    <a href="#/compare" data-r="compare">Compare</a>
+    <a href="#/quiz" data-r="quiz">Find your alternative</a>
+    <span class="langsw" role="group" aria-label="Language">
+      <button data-setlang="en" aria-pressed="true">EN</button>
+      <button data-setlang="fr" aria-pressed="false">FR</button>
+    </span>
   </nav>
 </header>
 
 <main>
-<div class="page" id="p-home">
+<div class="page" id="p-home-en">
+<div class="hero">
+  <div class="wrap">
+    <h1>Discord isn't the only place to chat.</h1>
+    <p>Encryption, privacy, open source: here are the alternatives worth a look, from the easiest to pick up to the most anonymous.</p>
+  </div>
+</div>
+
+  <section class="wrap blk" aria-labelledby="t-why-en">
+    <h2 class="sec" id="t-why-en">Why leave Discord?</h2>
+    <div class="alert" role="note">
+      <p class="tag">Since 09/23/2026</p>
+      <h3>Discord relaunches age verification and classification</h3>
+      <p>Every account is now sorted into a group: adult, teen, or unconfirmed. Discord bases this on account age, servers joined, connected games, and overall activity. The company says it doesn't read messages or calls, but admits adults can be misclassified.</p>
+      <p>According to Discord, more than 90% of users won't need to do anything, and messaging stays accessible without confirming your age. For everyone else, confirmation goes through a credit card, the App Store, Google Play, Google Wallet, or AgeKey depending on the region; teens see certain servers and messages from strangers restricted.</p>
+      <p class="src">Sources: <a href="https://dotesports.com/general/news/discord-global-age-checks-verification" target="_blank" rel="noopener">Dot Esports</a>, <a href="https://techcrunch.com/2026/09/22/discords-age-verification-era-is-upon-us-despite-community-backlash/" target="_blank" rel="noopener">TechCrunch</a>, <a href="https://discord.com/blog/getting-global-age-assurance-right-what-we-got-wrong-and-whats-changing" target="_blank" rel="noopener">Discord's blog</a></p>
+    </div>
+    <div class="facts">
+      <article class="fact"><h3>At least 4 security incidents since 2023</h3><p>A support agent's account hacked in 2023, a third-party invite-link service breached the same year, a support vendor compromised in September 2025, and an age-verification vendor exposed in early 2026. Full timeline in "Show more". Sources: <a href="https://techcrunch.com/2026/09/22/discords-age-verification-era-is-upon-us-despite-community-backlash/" target="_blank" rel="noopener">TechCrunch</a>.</p></article>
+      <article class="fact"><h3>A closed platform</h3><p>Text messages aren't end-to-end encrypted. Your community's rules, history, and data depend on a single company, which can change the terms overnight.</p></article>
+    </div>
+    <div class="extra" id="extra-en" hidden>
+      <div class="facts">
+        <article class="fact wide"><h3>Timeline of Discord-related security incidents</h3>
+          <ul class="steps" style="margin-top:1rem">
+            <li><b>March 2023 — Support agent's account hacked</b>Unauthorized access to the ticketing system exposed the emails, exchanges, and attachments of around 180 people, including at least one ID or driver's license. Discord shut off access and notified those affected. Source: notification to the Office of the Maine Attorney General, reported by <a href="https://blog.internxt.com/discord-data-breach/" target="_blank" rel="noopener">Internxt</a>.</li>
+            <li><b>August 2023 — Discord.io, a third-party invite-link service</b>This independent site (not run by Discord) was hacked: around 760,000 accounts with usernames, emails, billing addresses, and hashed passwords. The service shut down after the incident. A reminder of the risks of unofficial tools connected to a Discord account.</li>
+            <li><b>September 2025 — Support vendor hacked</b>Details below.</li>
+            <li><b>February 2026 — Persona, age-verification vendor</b>Researchers found vendor components publicly exposed, revealing details about how Discord's age-verification system works. Persona says no personal data was exposed; Discord ended the partnership after the backlash. Source: <a href="https://breachhistory.com/blog/discord-data-breaches-full-timeline-through-2026" target="_blank" rel="noopener">BreachHistory</a>.</li>
+          </ul>
+          <p style="margin-top:1rem">Other episodes circulate without official confirmation: databases of public messages scraped by third-party services (Spy.pet, RestoreCord, an Estonian scraper in 2025), and an unverified January 2026 claim ("HawkSec", around 78.5 million files). A June 2026 filing claiming 10 million accounts affected in Maine turned out to be a hoax.</p></article>
+        <article class="fact wide"><h3>September 2025: what leaked, and what stayed safe</h3>
+          <p><b>Exposed:</b> name, Discord username, email and contact details provided, limited payment information (payment type, last four digits of the card, purchase history), IP addresses, messages and attachments sent to Customer Support or Trust &amp; Safety.</p>
+          <p><b>Not affected:</b> full card numbers and CVV codes, physical address, passwords and authentication data, messages and activity on Discord beyond exchanges with support.</p>
+          <p>Discord revoked the vendor's access, launched an investigation with a forensics firm, and notified law enforcement. Affected people received an email with the impacted ticket numbers; the incident was publicly announced on October 3. The attackers claim much higher volumes, which Discord disputes. Sources: Discord's official email to affected users, <a href="https://discord.com/press-releases/update-on-security-incident-involving-third-party-customer-service" target="_blank" rel="noopener">Discord's press release</a>.</p></article>
+        <article class="fact"><h3>A plan pushed through?</h3><p>The plan announced in February required a facial age estimate or an ID scan for unconfirmed accounts. After privacy criticism, Discord delayed it, then relaunched it in a reworked form. Source: <a href="https://www.engadget.com/2265924/discord-rolls-out-its-revised-age-verification-policy/" target="_blank" rel="noopener">Engadget</a>.</p></article>
+        <article class="fact"><h3>Adults misclassified</h3><p>The classification relies on estimates drawn from usage signals. Discord acknowledges adults can be wrongly placed in another group. You can check your group and, if needed, confirm your age.</p></article>
+        <article class="fact"><h3>Rules that vary by country</h3><p>Automatic estimation isn't available at launch in the UK and Australia, where requirements differ. Elsewhere, the rollout follows new local laws.</p></article>
+        <article class="fact"><h3>Vendors on the front line</h3><p>Confirming your age goes through third-party services: card payment, app stores, AgeKey. The 2025 breach is a reminder that sensitive data handed to a vendor isn't necessarily safe.</p></article>
+      </div>
+      <p class="fair">To be fair: Discord says it doesn't read messages or calls to estimate age, doesn't display the group on your profile, and keeps messaging and voice accessible without confirmation.</p>
+    </div>
+    <button class="more-toggle" id="tgl-en" aria-expanded="false" aria-controls="extra-en">Show more…</button>
+  </section>
+
+  <section class="wrap feat" aria-label="Our two main picks">
+    <article class="panel pm">
+      <span class="badge">Our recommendation</span>
+      <h2>Proton Meet</h2>
+      <p class="lede">Packed with features similar to Discord, secure and accessible.</p>
+      <ul>
+        <li>End-to-end encrypted audio and video calls, chat, and screen sharing</li>
+        <li>Persistent meeting rooms, scheduling via Proton Calendar</li>
+        <li>Built in Switzerland by the team behind Proton Mail and Proton VPN</li>
+      </ul>
+      <div class="meta-slot" data-id="pm"></div>
+      <div class="go"><a class="btn" href="https://proton.me/meet" target="_blank" rel="noopener">Discover Proton Meet</a></div>
+    </article>
+
+    <article class="panel sx">
+      <span class="badge">Ultimate anonymity</span>
+      <h2>SimpleX</h2>
+      <p>The messenger that asks for no phone number, no email, no username. No user identifier exists at all, so no one can link your conversations back to you.</p>
+      <ul>
+        <li>No account, no profile identifier</li>
+        <li>End-to-end encryption, open source, audited by Trail of Bits</li>
+        <li>Groups, voice messages, and calls</li>
+      </ul>
+      <p class="note">No public servers like Discord's: groups are created by invitation.</p>
+      <div class="meta-slot" data-id="sx"></div>
+      <div class="go"><a class="btn" href="https://simplex.chat" target="_blank" rel="noopener">Discover SimpleX</a></div>
+    </article>
+  </section>
+
+  <section class="wrap blk" aria-labelledby="t-more-en">
+    <h2 class="sec" id="t-more-en">Also worth a look</h2>
+    <p class="lead">Ten more options. Open a card to see its strengths, limits, launch date, known leaks, and our trust rating.</p>
+    <div class="chips" role="group" aria-label="Filter the alternatives">
+      <button class="chip" data-f="all" aria-pressed="true">All</button>
+      <button class="chip" data-f="e2e" aria-pressed="false">End-to-end encrypted</button>
+      <button class="chip" data-f="self" aria-pressed="false">Self-hostable</button>
+      <button class="chip" data-f="noid" aria-pressed="false">No unique identifier</button>
+    </div>
+    <p class="fnote">"No unique identifier": no phone number or email at signup, just a random ID not tied to your identity. Only SimpleX truly has none at all.</p>
+    <ul class="rows" id="rows-en"></ul>
+    <p class="fnote" style="margin-top:1.25rem"><a href="#/compare">See the full comparison</a> · <a href="#/quiz">Find my alternative</a></p>
+  </section>
+</div>
+
+<div class="page" id="p-compare-en" hidden>
+  <section class="wrap blk" aria-labelledby="t-cmp-en">
+    <h2 class="sec" id="t-cmp-en">Comparison</h2>
+    <p class="lead">Proton Meet and SimpleX, marked with a green line, sit at the top of the table, right after Discord, which serves as the reference.</p>
+    <div class="tw"><table id="tbl-en"></table></div>
+  </section>
+</div>
+
+<div class="page" id="p-quiz-en" hidden>
+  <section class="wrap blk" aria-labelledby="t-quiz-en">
+    <h2 class="sec" id="t-quiz-en">Find your alternative</h2>
+    <p class="lead">Five questions, three recommendations with the reasons behind them.</p>
+    <div class="quiz" id="quiz-en" aria-live="polite"></div>
+
+    <div class="mig" aria-labelledby="t-mig-en">
+      <h3 id="t-mig-en">Once you've picked: migrate without losing your community</h3>
+      <ol class="steps">
+        <li><b>Test with a few people</b>Set up a first space with two or three close friends and check that everyone can connect.</li>
+        <li><b>Recreate the essentials</b>Bring back only the channels that are actually used, the useful roles, and the rules. The rest can wait.</li>
+        <li><b>Announce the date</b>Pin a message on Discord with the invite link and the switch-over day.</li>
+        <li><b>Keep both for a few weeks</b>Keep Discord for announcements while activity settles in elsewhere. Replace only the bots you truly need.</li>
+        <li><b>Close or archive</b>Grab anything that matters, then set the old server to read-only with a redirect message.</li>
+      </ol>
+    </div>
+  </section>
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Page last updated on 09/24/2026 at 17:50:07.</p>
+    <p>Leaks: major public incidents we were able to identify, non-exhaustive list. "Trust" is an editorial score out of 5 based on open-source code, encryption, audits, and leak history. Features change fast: check each service's own site for details before you migrate.</p>
+  </div>
+</footer>
+</div>
+<!-- ======================= END ENGLISH ======================= -->
+
+<!-- ========================= FRANÇAIS ========================= -->
+<div id="site-fr" hidden>
+<header class="top">
+  <nav class="wrap" aria-label="Pages">
+    <a class="brand" href="#/home"><svg aria-hidden="true"><use href="#logo"/></svg>Quitter Discord</a>
+    <a href="#/home" data-r="home">Accueil</a>
+    <a href="#/compare" data-r="compare">Comparatif</a>
+    <a href="#/quiz" data-r="quiz">Trouve ton alternative</a>
+    <span class="langsw" role="group" aria-label="Langue">
+      <button data-setlang="en" aria-pressed="false">EN</button>
+      <button data-setlang="fr" aria-pressed="true">FR</button>
+    </span>
+  </nav>
+</header>
+
+<main>
+<div class="page" id="p-home-fr">
 <div class="hero">
   <div class="wrap">
     <h1>Discord n'est pas le seul endroit où discuter.</h1>
@@ -192,8 +339,8 @@ tr.hl th{box-shadow:inset 4px 0 0 var(--accent)}
   </div>
 </div>
 
-  <section class="wrap blk" aria-labelledby="t-why">
-    <h2 class="sec" id="t-why">Pourquoi quitter Discord ?</h2>
+  <section class="wrap blk" aria-labelledby="t-why-fr">
+    <h2 class="sec" id="t-why-fr">Pourquoi quitter Discord ?</h2>
     <div class="alert" role="note">
       <p class="tag">Depuis le 23/09/2026</p>
       <h3>Discord relance sa vérification et sa classification d'âge</h3>
@@ -205,7 +352,7 @@ tr.hl th{box-shadow:inset 4px 0 0 var(--accent)}
       <article class="fact"><h3>Au moins 4 incidents de sécurité depuis 2023</h3><p>Piratage d'un agent de support en 2023, fuite d'un service tiers de liens d'invitation la même année, compromission d'un prestataire de support en septembre 2025 et exposition d'un prestataire de vérification d'âge début 2026. Chronologie complète dans « Afficher plus ». Sources : <a href="https://techcrunch.com/2026/09/22/discords-age-verification-era-is-upon-us-despite-community-backlash/" target="_blank" rel="noopener">TechCrunch</a>.</p></article>
       <article class="fact"><h3>Une plateforme fermée</h3><p>Les messages texte ne sont pas chiffrés de bout en bout. Règles, historique et données de ta communauté dépendent d'une seule entreprise, qui peut changer les conditions du jour au lendemain.</p></article>
     </div>
-    <div class="extra" id="extra" hidden>
+    <div class="extra" id="extra-fr" hidden>
       <div class="facts">
         <article class="fact wide"><h3>Chronologie des incidents de sécurité liés à Discord</h3>
           <ul class="steps" style="margin-top:1rem">
@@ -226,7 +373,7 @@ tr.hl th{box-shadow:inset 4px 0 0 var(--accent)}
       </div>
       <p class="fair">Pour être juste : Discord affirme ne pas lire les messages ni les appels pour estimer l'âge, ne pas afficher le groupe sur le profil et laisser la messagerie et le vocal accessibles sans confirmation.</p>
     </div>
-    <button class="more-toggle" id="tgl" aria-expanded="false" aria-controls="extra">Afficher plus…</button>
+    <button class="more-toggle" id="tgl-fr" aria-expanded="false" aria-controls="extra-fr">Afficher plus…</button>
   </section>
 
   <section class="wrap feat" aria-label="Nos deux choix principaux">
@@ -258,8 +405,8 @@ tr.hl th{box-shadow:inset 4px 0 0 var(--accent)}
     </article>
   </section>
 
-  <section class="wrap blk" aria-labelledby="t-more">
-    <h2 class="sec" id="t-more">Et aussi</h2>
+  <section class="wrap blk" aria-labelledby="t-more-fr">
+    <h2 class="sec" id="t-more-fr">Et aussi</h2>
     <p class="lead">Dix autres options. Ouvre une fiche pour voir ses points forts, ses limites, sa date de création, ses fuites connues et notre niveau de confiance.</p>
     <div class="chips" role="group" aria-label="Filtrer les alternatives">
       <button class="chip" data-f="all" aria-pressed="true">Toutes</button>
@@ -268,27 +415,27 @@ tr.hl th{box-shadow:inset 4px 0 0 var(--accent)}
       <button class="chip" data-f="noid" aria-pressed="false">Sans identifiant unique</button>
     </div>
     <p class="fnote">« Sans identifiant unique » : ni numéro de téléphone, ni e-mail à l'inscription, seulement un identifiant aléatoire non relié à ton identité. Seul SimpleX n'en a vraiment aucun.</p>
-    <ul class="rows" id="rows"></ul>
-    <p class="fnote" style="margin-top:1.25rem"><a href="#/comparatif">Voir le comparatif complet</a> · <a href="#/quiz">Trouver mon alternative</a></p>
+    <ul class="rows" id="rows-fr"></ul>
+    <p class="fnote" style="margin-top:1.25rem"><a href="#/compare">Voir le comparatif complet</a> · <a href="#/quiz">Trouver mon alternative</a></p>
   </section>
 </div>
 
-<div class="page" id="p-comparatif" hidden>
-  <section class="wrap blk" aria-labelledby="t-cmp">
-    <h2 class="sec" id="t-cmp">Comparatif</h2>
+<div class="page" id="p-compare-fr" hidden>
+  <section class="wrap blk" aria-labelledby="t-cmp-fr">
+    <h2 class="sec" id="t-cmp-fr">Comparatif</h2>
     <p class="lead">Proton Meet et SimpleX, marqués d'un trait vert, sont en tête du tableau, juste après Discord qui sert de référence.</p>
-    <div class="tw"><table id="tbl"></table></div>
+    <div class="tw"><table id="tbl-fr"></table></div>
   </section>
 </div>
 
-<div class="page" id="p-quiz" hidden>
-  <section class="wrap blk" aria-labelledby="t-quiz">
-    <h2 class="sec" id="t-quiz">Trouve ton alternative</h2>
+<div class="page" id="p-quiz-fr" hidden>
+  <section class="wrap blk" aria-labelledby="t-quiz-fr">
+    <h2 class="sec" id="t-quiz-fr">Trouve ton alternative</h2>
     <p class="lead">Cinq questions, trois recommandations avec les raisons du choix.</p>
-    <div class="quiz" id="quiz" aria-live="polite"></div>
+    <div class="quiz" id="quiz-fr" aria-live="polite"></div>
 
-    <div class="mig" aria-labelledby="t-mig">
-      <h3 id="t-mig">Une fois choisi : migrer sans perdre ta communauté</h3>
+    <div class="mig" aria-labelledby="t-mig-fr">
+      <h3 id="t-mig-fr">Une fois choisi : migrer sans perdre ta communauté</h3>
       <ol class="steps">
         <li><b>Teste avec quelques personnes</b>Crée un premier espace avec deux ou trois proches et vérifie que tout le monde arrive à s'y connecter.</li>
         <li><b>Recrée l'essentiel</b>Reprends seulement les salons vraiment utilisés, les rôles utiles et les règles. Le reste peut attendre.</li>
@@ -307,12 +454,145 @@ tr.hl th{box-shadow:inset 4px 0 0 var(--accent)}
     <p>Fuites : incidents publics majeurs que nous avons pu recenser, liste non exhaustive. « Confiance » est une note éditoriale sur 5 fondée sur le code ouvert, le chiffrement, les audits et l'historique de fuites. Les fonctionnalités évoluent vite : vérifie les détails sur le site de chaque service avant de migrer.</p>
   </div>
 </footer>
+</div>
+<!-- ======================= END FRANÇAIS ======================= -->
 
 <script>
-var PL={A:["pA","iOS / macOS"],a:["pa","Android"],W:["pW","Windows"],x:["px","Linux"],w:["pw","Web"]},
-TL=["","","Faible","Moyenne","Élevée","Très élevée"],SY=["✗","✓","~"],SL=["Non","Oui","Partiel"];
-/* tb = [chiffré de bout en bout, vocal, vidéo, open source, gratuit] ; 0 non, 1 oui, 2 partiel */
-var S=[
+function buildSite(suf, S, Q, T){
+  var PL={A:["pA",T.iOS],a:["pa",T.Android],W:["pW","Windows"],x:["px","Linux"],w:["pw","Web"]},
+  TL=T.trustLabels,SY=["✗","✓","~"],SL=T.slabels;
+  S[0].lt=T.dcLeakText;
+  function ic(s){return s.split("").map(function(c){var p=PL[c];return '<svg class="pi" role="img" aria-label="'+p[1]+'"><title>'+p[1]+'</title><use href="#'+p[0]+'"/></svg>'}).join("")}
+  function dots(n){var h="";for(var i=1;i<=5;i++)h+='<i'+(i<=n?' class="on"':'')+'></i>';return '<span class="dots" role="img" aria-label="'+T.trustAria+' '+n+'/5">'+h+'</span>'}
+  function meta(s){return '<dl class="meta"><div><dt>'+T.mFounded+'</dt><dd>'+s.c+'</dd></div><div><dt>'+T.mLeaks+'</dt><dd>'+(s.lk?s.lk+' : '+s.lt:T.mNone)+'</dd></div><div><dt>'+T.mTrust+'</dt><dd>'+dots(s.t)+' '+TL[s.t]+'</dd></div><div><dt>'+T.mPlatforms+'</dt><dd>'+ic(s.p)+'</dd></div><div><dt>'+T.mPrice+'</dt><dd>'+s.pr+'</dd></div></dl>'}
+  var rowsEl=document.getElementById("rows-"+suf),tblEl=document.getElementById("tbl-"+suf),quizEl=document.getElementById("quiz-"+suf);
+  document.querySelectorAll("#site-"+suf+" .meta-slot").forEach(function(e){e.innerHTML=meta(S.filter(function(s){return s.id===e.dataset.id})[0])});
+  rowsEl.innerHTML=S.filter(function(s){return !s.f&&s.u}).map(function(s){return '<li class="row" data-tags="'+s.x+'"><details><summary><span><h3>'+s.n+'</h3><span class="kind">'+s.k+'</span></span>'+dots(s.t)+'</summary><div class="body"><p>'+s.d+'</p><ul class="pc"><li class="pro">'+s.pro+'</li><li class="con">'+s.con+'</li></ul>'+meta(s)+'<a class="visit" href="'+s.u+'" target="_blank" rel="noopener">'+T.official+'</a></div></details></li>'}).join("");
+  tblEl.innerHTML='<caption>'+T.tblCaption+'</caption><thead><tr><th scope="col" style="text-align:left;padding-left:1.25rem">'+T.thService+'</th><th scope="col">'+T.thFounded+'</th><th scope="col">'+T.thLeaks+'</th><th scope="col">'+T.thTrust+'</th><th scope="col">'+T.thE2E+'</th><th scope="col">'+T.thVoice+'</th><th scope="col">'+T.thVideo+'</th><th scope="col">'+T.thOSS+'</th><th scope="col">'+T.thFree+'</th></tr></thead><tbody>'+S.map(function(s){return '<tr'+(s.id==="dc"?' class="ref"':s.f?' class="hl"':'')+'><th scope="row">'+s.n+'</th><td>'+s.c+'</td><td>'+s.lk+'</td><td>'+dots(s.t)+'</td>'+s.tb.map(function(v){return '<td class="v'+v+'" aria-label="'+SL[v]+'">'+SY[v]+'</td>'}).join("")+'</tr>'}).join("")+'</tbody>';
+
+  var chips=document.querySelectorAll("#site-"+suf+" .chip"),rows=document.querySelectorAll("#site-"+suf+" .row");
+  chips.forEach(function(c){c.addEventListener("click",function(){
+    chips.forEach(function(x){x.setAttribute("aria-pressed",x===c?"true":"false")});
+    var f=c.dataset.f;
+    rows.forEach(function(r){r.hidden=f!=="all"&&r.dataset.tags.split(" ").indexOf(f)<0});
+  })});
+
+  var ch=[];
+  function foc(){var h=quizEl.querySelector("h3");if(h){h.tabIndex=-1;h.focus()}}
+  function ask(){
+    var i=ch.length,q=Q[i];
+    quizEl.innerHTML='<div class="bar" role="progressbar" aria-label="'+T.progress+'" aria-valuemin="0" aria-valuemax="'+Q.length+'" aria-valuenow="'+i+'"><i style="width:'+(i/Q.length*100)+'%"></i></div><p class="qn">'+T.question+' '+(i+1)+' '+T.of+' '+Q.length+'</p><h3>'+q[0]+'</h3><div class="opts">'+q[1].map(function(o,j){return '<button class="opt" data-i="'+j+'">'+o[0]+'</button>'}).join("")+'</div>'+(i?'<div class="qnav"><button class="opt" id="back-'+suf+'">'+T.prevQ+'</button></div>':'');
+    if(i)foc();
+  }
+  function res(){
+    var sc={},wh={},RK=T.rk;
+    ch.forEach(function(j,i){var o=Q[i][1][j];for(var k in o[1]){sc[k]=(sc[k]||0)+o[1][k];if(o[1][k]>=2&&o[2])(wh[k]=wh[k]||[]).push(o[2])}});
+    var top=S.filter(function(s){return sc[s.id]}).sort(function(a,b){return sc[b.id]-sc[a.id]||b.t-a.t}).slice(0,3);
+    quizEl.innerHTML='<p class="qn">'+T.yourResult+'</p><div class="res">'+top.map(function(s,i){
+      return '<div><span class="rk">'+RK[i]+'</span><h3>'+s.n+'</h3><p>'+s.k+'</p>'+(wh[s.id]?'<ul class="why">'+wh[s.id].slice(0,3).map(function(w){return '<li>'+w+'</li>'}).join("")+'</ul>':'')+'<p><a href="'+s.u+'" target="_blank" rel="noopener">'+T.official+'</a> · <a href="#/compare">'+T.seeCompare+'</a></p></div>'}).join("")+'</div><button class="opt again" id="again-'+suf+'">'+T.retake+'</button>';
+    foc();
+  }
+  function start(){ch=[];ask()}
+  quizEl.addEventListener("click",function(e){
+    var b=e.target.closest("button");if(!b)return;
+    if(b.id==="again-"+suf){start();return}
+    if(b.id==="back-"+suf){ch.pop();ask();return}
+    ch.push(+b.dataset.i);ch.length<Q.length?ask():res();
+  });
+  start();
+
+  var tg=document.getElementById("tgl-"+suf),ex=document.getElementById("extra-"+suf);
+  tg.addEventListener("click",function(){var o=ex.hidden;ex.hidden=!o;tg.setAttribute("aria-expanded",o);tg.textContent=o?T.less:T.more});
+
+  var root=document.getElementById("site-"+suf);
+  var PG=["home","compare","quiz"],TT=T.pageTitles;
+  function route(r){
+    if(!r)r=location.hash.replace(/^#\/?/,"")||"home";
+    if(PG.indexOf(r)<0)r="home";
+    PG.forEach(function(p){document.getElementById("p-"+p+"-"+suf).hidden=p!==r});
+    root.querySelectorAll("[data-r]").forEach(function(a){a.dataset.r===r?a.setAttribute("aria-current","page"):a.removeAttribute("aria-current")});
+    if(!root.hidden){document.title=TT[r];window.scrollTo(0,0)}
+  }
+  root.addEventListener("click",function(e){
+    var a=e.target.closest('a[href^="#/"]');if(!a)return;
+    e.preventDefault();var r=a.getAttribute("href").replace(/^#\/?/,"")||"home";
+    try{location.hash="/"+(r==="home"?"":r)}catch(x){}
+    route(r);
+  });
+  window.addEventListener("hashchange",function(){route()});
+  route();
+}
+
+var S_EN=[
+{id:"dc",n:"Discord (reference)",c:"2015",lk:4,t:2,tb:[2,1,1,0,1]},
+{id:"pm",f:1,n:"Proton Meet",k:"Encrypted video conferencing",u:"https://proton.me/meet",c:"2026",lk:0,t:4,p:"Aaw",pr:"Free (1 h, 50 people); Pro from $7.99/mo",tb:[1,1,1,1,1]},
+{id:"sx",f:1,n:"SimpleX",k:"Messaging with no identifier",u:"https://simplex.chat",c:"2022",lk:0,t:5,p:"AaWx",pr:"Free",tb:[1,1,1,1,1]},
+{id:"st",n:"Stoat",k:"Closest to Discord (formerly Revolt)",c:"2021",lk:0,t:3,p:"AaWxw",pr:"Free",tb:[0,1,2,1,1],x:"self",u:"https://stoat.chat",
+ d:"Servers, channels, roles, emojis: the layout feels like Discord's. Open source, and you can self-host it.",pro:"Instant pickup for anyone used to Discord.",con:"No end-to-end encryption; young project, run by a small team."},
+{id:"el",n:"Element",k:"Matrix network, decentralized",c:"2014 (Matrix)",lk:1,lt:"matrix.org servers compromised in 2019",t:4,p:"AaWxw",pr:"Free; paid pro hosting",tb:[1,1,1,1,1],x:"e2e self",u:"https://element.io",
+ d:"Spaces and rooms, voice and video calls. Each community can run its own server while staying connected to the others.",pro:"End-to-end encryption, federation, bridges to other messengers.",con:"Concepts and interface are more technical at first."},
+{id:"sg",n:"Signal",k:"Mainstream private messaging",c:"2014",lk:1,lt:"2022 Twilio incident (around 1,900 numbers exposed)",t:5,p:"AaWx",pr:"Free (non-profit organization)",tb:[1,1,1,1,1],x:"e2e",u:"https://signal.org",
+ d:"The go-to for private conversations: groups, voice and video calls, easy to get your close ones to adopt.",pro:"End-to-end encryption everywhere, audited, very simple.",con:"Sign-up requires a phone number; no channels or roles."},
+{id:"zu",n:"Zulip",k:"Topic-based discussions",c:"2012",lk:0,t:4,p:"AaWxw",pr:"Free self-hosted; paid cloud",tb:[0,2,2,1,1],x:"self",u:"https://zulip.com",
+ d:"Every message belongs to a topic, so you can find a thread weeks later. Great for a community that writes a lot.",pro:"Readable history, great for asynchronous conversations.",con:"Calls via integrations; no end-to-end encryption."},
+{id:"mu",n:"Mumble",k:"Voice only",c:"2005",lk:0,t:4,p:"AaWx",pr:"Free",tb:[0,1,0,1,1],x:"self noid",u:"https://www.mumble.info",
+ d:"An open-source voice server with very low latency, built for team gaming. Lightweight, and you keep full control of the server.",pro:"Excellent audio quality and latency, no global sign-up required.",con:"No video or rich chat; third-party mobile apps."},
+{id:"ts",n:"TeamSpeak",k:"The veteran of gaming voice chat",c:"2001",lk:0,t:3,p:"AaWx",pr:"Free for non-commercial use; paid hosted servers",tb:[0,1,0,0,2],x:"self",u:"https://teamspeak.com",
+ d:"Audio quality, low latency, servers you can self-host or rent.",pro:"Battle-tested for over twenty years, very lightweight.",con:"Closed source; no video."},
+{id:"se",n:"Session",k:"Messaging with no phone or email",c:"2020",lk:0,t:4,p:"AaWx",pr:"Free",tb:[1,1,2,1,1],x:"e2e noid",u:"https://getsession.org",
+ d:"No phone number or email at sign-up; messages route through a network of nodes. Groups and open communities.",pro:"Anonymous sign-up, end-to-end encryption.",con:"Communities are less rich than Discord's; you need to keep track of your Session ID."},
+{id:"ja",n:"Jami",k:"Peer-to-peer, no central server",c:"2016",lk:0,t:4,p:"AaWx",pr:"Free",tb:[1,1,1,1,1],x:"e2e noid",u:"https://jami.net",
+ d:"Calls and messages go directly from one device to another, with no central server or account. A GNU project.",pro:"No infrastructure to depend on, end-to-end encryption.",con:"Call quality varies; not well suited to large communities."},
+{id:"ma",n:"Mattermost",k:"Self-hosted team chat",c:"2016",lk:0,t:4,p:"AaWxw",pr:"Free community edition; paid plans",tb:[0,2,2,2,2],x:"self",u:"https://mattermost.com",
+ d:"Channels, threads, and integrations, built for teams. You host it yourself.",pro:"Solid and full-featured for an organized group.",con:"Enterprise-oriented; some features are paid."},
+{id:"fl",n:"Flackle",k:"Encrypted voice and video, still in closed beta",c:"2026",lk:0,t:3,p:"w",pr:"Free (waitlist)",tb:[2,1,1,0,1],x:"",u:"https://flackle.com",
+ d:"A Discord alternative in development: end-to-end encrypted voice and video calls, no ID or biometric verification required. Still in closed beta, accessible via waitlist only.",
+ pro:"End-to-end encrypted calls, refuses ID verification, no data resale.",
+ con:"Not yet public (waitlist only); text messages aren't end-to-end encrypted; self-hosting is only planned for later."},
+{id:"ra",n:"RootApp",k:"Extensible platform for gaming communities",c:"2025",lk:0,t:2,p:"Aaw",pr:"Free",tb:[0,1,1,0,1],x:"",u:"https://www.rootapp.com",
+ d:"A gaming-focused Discord alternative, with mini apps to organize your community: task tracking, event planning, a sticker wall.",
+ pro:"No data resale or AI training on content; built-in apps useful for gaming communities.",
+ con:"No end-to-end encryption; the marketing site uses targeted advertising cookies (with consent)."},
+{id:"rc",n:"Rocket.Chat",k:"Open messaging for organizations",c:"2015",lk:0,t:3,p:"AaWxw",pr:"Free self-hosted; paid plans",tb:[2,2,2,2,2],x:"self",u:"https://rocket.chat",
+ d:"Channels, video calls, bridges to other messengers. Optional end-to-end encryption in some private rooms.",pro:"Very customizable, bridges to other services.",con:"A lot of options to configure; some past vulnerabilities have been fixed."}
+];
+
+var Q_EN=[
+["What do you mostly want…",[
+ ["A community with servers, channels, and roles",{st:3,el:3,rc:1,ma:1,zu:1},"keeps the server-and-channel layout"],
+ ["Private conversations with close friends",{sg:3,sx:3,se:2,ja:2},"built for private conversations"],
+ ["Calls and meetings",{pm:3,ja:1,el:1,sg:1},"designed for calls and meetings"],
+ ["Voice chat while gaming",{mu:3,ts:3},"lightweight, low-latency voice"],
+ ["Ongoing, topic-based discussions",{zu:3,ma:1,el:1},"discussions organized by topic"]]],
+["What size is your group?",[
+ ["Fewer than 10 people",{sg:2,ja:2,sx:1,se:1,pm:1},"well suited to small groups"],
+ ["Between 10 and 100 people",{pm:1,st:1,el:1,sg:1,mu:1,se:1,sx:1},""],
+ ["Over 100, open to the public",{st:3,el:3,zu:1,rc:1,ma:1},"handles large, open communities"]]],
+["What level of privacy do you need?",[
+ ["Maximum: nothing should link back to me",{sx:4,se:3,ja:2},"sign-up with no phone number or email"],
+ ["End-to-end encryption",{sg:2,el:2,pm:2,sx:1,se:1,ja:1},"end-to-end encryption"],
+ ["Doesn't matter much, as long as it works",{st:2,ts:1,mu:1,zu:1,ma:1,rc:1},""]]],
+["Are you willing to host a server?",[
+ ["Yes, that doesn't scare me",{el:2,st:1,mu:2,ts:1,zu:2,ma:2,rc:2},"you can self-host it"],
+ ["No, I want something ready to go",{pm:2,sg:2,sx:1,se:1,ja:1,st:1},"ready to go, no server to manage"]]],
+["What can't you do without",[
+ ["Video and screen sharing",{pm:3,el:2,ja:2,sg:1,st:1},"video and screen sharing"],
+ ["Solid voice quality",{mu:2,ts:2,pm:1,st:1,el:1,sg:1},"strong voice quality"],
+ ["A text history that's easy to find",{zu:3,ma:2,el:1,st:1},"an easy-to-find text history"],
+ ["Bots and integrations",{rc:2,ma:2,el:1,zu:1,st:1},"integrations and bridges to other tools"]]]
+];
+
+var T_EN={iOS:"iOS / macOS",Android:"Android",trustLabels:["","","Low","Medium","High","Very high"],
+ slabels:["No","Yes","Partial"],trustAria:"Trust",mFounded:"Founded",mLeaks:"Known leaks",mNone:"None major known",
+ mTrust:"Trust",mPlatforms:"Platforms",mPrice:"Price",official:"Official site",
+ tblCaption:"✓ yes · ✗ no · ~ partial or plan-dependent. Leaks: number of known major incidents.",
+ thService:"Service",thFounded:"Founded",thLeaks:"Leaks",thTrust:"Trust",thE2E:"End-to-end encrypted",thVoice:"Voice",thVideo:"Video",thOSS:"Open source",thFree:"Free",
+ progress:"Progress",question:"Question",of:"of",prevQ:"← Previous question",rk:["Best match","Also a good fit","Worth considering"],
+ yourResult:"Your result",seeCompare:"See in the comparison",retake:"Retake the quiz",more:"Show more…",less:"Show less…",
+ pageTitles:{home:"Leaving Discord: the best alternatives",compare:"Comparing Discord alternatives",quiz:"Find your Discord alternative"},
+ dcLeakText:"4 confirmed incidents since 2023 (full timeline in \u201cShow more\u201d on the home page)"};
+
+var S_FR=[
 {id:"dc",n:"Discord (référence)",c:"2015",lk:4,t:2,tb:[2,1,1,0,1]},
 {id:"pm",f:1,n:"Proton Meet",k:"Visioconférence chiffrée",u:"https://proton.me/meet",c:"2026",lk:0,t:4,p:"Aaw",pr:"Gratuit (1 h, 50 pers.) ; Pro dès 7,99 $/mois",tb:[1,1,1,1,1]},
 {id:"sx",f:1,n:"SimpleX",k:"Messagerie sans identifiant",u:"https://simplex.chat",c:"2022",lk:0,t:5,p:"AaWx",pr:"Gratuit",tb:[1,1,1,1,1]},
@@ -345,24 +625,8 @@ var S=[
 {id:"rc",n:"Rocket.Chat",k:"Messagerie ouverte pour organisations",c:"2015",lk:0,t:3,p:"AaWxw",pr:"Gratuit auto-hébergé ; offres payantes",tb:[2,2,2,2,2],x:"self",u:"https://rocket.chat",
  d:"Canaux, appels vidéo, ponts vers d'autres messageries. Chiffrement de bout en bout optionnel dans certains salons privés.",pro:"Très personnalisable, ponts vers d'autres services.",con:"Beaucoup d'options à configurer ; des failles ont été corrigées par le passé."}
 ];
-S[0].lt="4 incidents confirmés depuis 2023 (détail dans « Afficher plus » sur l'accueil)";
-function ic(s){return s.split("").map(function(c){var p=PL[c];return '<svg class="pi" role="img" aria-label="'+p[1]+'"><title>'+p[1]+'</title><use href="#'+p[0]+'"/></svg>'}).join("")}
-function dots(n){var h="";for(var i=1;i<=5;i++)h+='<i'+(i<=n?' class="on"':'')+'></i>';return '<span class="dots" role="img" aria-label="Confiance '+n+' sur 5">'+h+'</span>'}
-function meta(s){return '<dl class="meta"><div><dt>Créé</dt><dd>'+s.c+'</dd></div><div><dt>Fuites connues</dt><dd>'+(s.lk?s.lk+' : '+s.lt:'Aucune majeure connue')+'</dd></div><div><dt>Confiance</dt><dd>'+dots(s.t)+' '+TL[s.t]+'</dd></div><div><dt>Plateformes</dt><dd>'+ic(s.p)+'</dd></div><div><dt>Prix</dt><dd>'+s.pr+'</dd></div></dl>'}
-document.querySelectorAll(".meta-slot").forEach(function(e){e.innerHTML=meta(S.filter(function(s){return s.id===e.dataset.id})[0])});
-document.getElementById("rows").innerHTML=S.filter(function(s){return !s.f&&s.u}).map(function(s){return '<li class="row" data-tags="'+s.x+'"><details><summary><span><h3>'+s.n+'</h3><span class="kind">'+s.k+'</span></span>'+dots(s.t)+'</summary><div class="body"><p>'+s.d+'</p><ul class="pc"><li class="pro">'+s.pro+'</li><li class="con">'+s.con+'</li></ul>'+meta(s)+'<a class="visit" href="'+s.u+'" target="_blank" rel="noopener">Site officiel</a></div></details></li>'}).join("");
-document.getElementById("tbl").innerHTML='<caption>✓ oui · ✗ non · ~ partiel ou selon l\'offre. Fuites : nombre d\'incidents majeurs connus.</caption><thead><tr><th scope="col" style="text-align:left;padding-left:1.25rem">Service</th><th scope="col">Créé</th><th scope="col">Fuites</th><th scope="col">Confiance</th><th scope="col">Chiffré de bout en bout</th><th scope="col">Vocal</th><th scope="col">Vidéo</th><th scope="col">Open source</th><th scope="col">Gratuit</th></tr></thead><tbody>'+S.map(function(s){return '<tr'+(s.id==="dc"?' class="ref"':s.f?' class="hl"':'')+'><th scope="row">'+s.n+'</th><td>'+s.c+'</td><td>'+s.lk+'</td><td>'+dots(s.t)+'</td>'+s.tb.map(function(v){return '<td class="v'+v+'" aria-label="'+SL[v]+'">'+SY[v]+'</td>'}).join("")+'</tr>'}).join("")+'</tbody>';
 
-/* Filtres */
-var chips=document.querySelectorAll(".chip"),rows=document.querySelectorAll(".row");
-chips.forEach(function(c){c.addEventListener("click",function(){
-  chips.forEach(function(x){x.setAttribute("aria-pressed",x===c?"true":"false")});
-  var f=c.dataset.f;
-  rows.forEach(function(r){r.hidden=f!=="all"&&r.dataset.tags.split(" ").indexOf(f)<0});
-})});
-
-/* Quiz : [question, [[réponse, points, raison]]] */
-var Q=[
+var Q_FR=[
 ["Tu veux surtout…",[
  ["Une communauté avec serveurs, salons et rôles",{st:3,el:3,rc:1,ma:1,zu:1},"reprend l'organisation en serveurs et salons"],
  ["Discuter en privé avec des proches",{sg:3,sx:3,se:2,ja:2},"pensé pour les conversations privées"],
@@ -386,51 +650,32 @@ var Q=[
  ["Un historique de texte facile à retrouver",{zu:3,ma:2,el:1,st:1},"historique de texte facile à retrouver"],
  ["Bots et intégrations",{rc:2,ma:2,el:1,zu:1,st:1},"intégrations et ponts vers d'autres outils"]]]
 ];
-var qz=document.getElementById("quiz"),ch=[];
-function foc(){var h=qz.querySelector("h3");if(h){h.tabIndex=-1;h.focus()}}
-function ask(){
-  var i=ch.length,q=Q[i];
-  qz.innerHTML='<div class="bar" role="progressbar" aria-label="Progression" aria-valuemin="0" aria-valuemax="'+Q.length+'" aria-valuenow="'+i+'"><i style="width:'+(i/Q.length*100)+'%"></i></div><p class="qn">Question '+(i+1)+' sur '+Q.length+'</p><h3>'+q[0]+'</h3><div class="opts">'+q[1].map(function(o,j){return '<button class="opt" data-i="'+j+'">'+o[0]+'</button>'}).join("")+'</div>'+(i?'<div class="qnav"><button class="opt" id="back">← Question précédente</button></div>':'');
-  if(i)foc();
-}
-function res(){
-  var sc={},wh={},RK=["Meilleure correspondance","Aussi adapté","À considérer"];
-  ch.forEach(function(j,i){var o=Q[i][1][j];for(var k in o[1]){sc[k]=(sc[k]||0)+o[1][k];if(o[1][k]>=2&&o[2])(wh[k]=wh[k]||[]).push(o[2])}});
-  var top=S.filter(function(s){return sc[s.id]}).sort(function(a,b){return sc[b.id]-sc[a.id]||b.t-a.t}).slice(0,3);
-  qz.innerHTML='<p class="qn">Ton résultat</p><div class="res">'+top.map(function(s,i){
-    return '<div><span class="rk">'+RK[i]+'</span><h3>'+s.n+'</h3><p>'+s.k+'</p>'+(wh[s.id]?'<ul class="why">'+wh[s.id].slice(0,3).map(function(w){return '<li>'+w+'</li>'}).join("")+'</ul>':'')+'<p><a href="'+s.u+'" target="_blank" rel="noopener">Site officiel</a> · <a href="#/comparatif">Voir dans le comparatif</a></p></div>'}).join("")+'</div><button class="opt" id="again">Refaire le quiz</button>';
-  foc();
-}
-function start(){ch=[];ask()}
-qz.addEventListener("click",function(e){
-  var b=e.target.closest("button");if(!b)return;
-  if(b.id==="again"){start();return}
-  if(b.id==="back"){ch.pop();ask();return}
-  ch.push(+b.dataset.i);ch.length<Q.length?ask():res();
-});
-start();
 
-/* Afficher plus / Réduire */
-var tg=document.getElementById("tgl"),ex=document.getElementById("extra");
-tg.addEventListener("click",function(){var o=ex.hidden;ex.hidden=!o;tg.setAttribute("aria-expanded",o);tg.textContent=o?"Réduire…":"Afficher plus…"});
+var T_FR={iOS:"iOS / macOS",Android:"Android",trustLabels:["","","Faible","Moyenne","Élevée","Très élevée"],
+ slabels:["Non","Oui","Partiel"],trustAria:"Confiance",mFounded:"Créé",mLeaks:"Fuites connues",mNone:"Aucune majeure connue",
+ mTrust:"Confiance",mPlatforms:"Plateformes",mPrice:"Prix",official:"Site officiel",
+ tblCaption:"✓ oui · ✗ non · ~ partiel ou selon l'offre. Fuites : nombre d'incidents majeurs connus.",
+ thService:"Service",thFounded:"Créé",thLeaks:"Fuites",thTrust:"Confiance",thE2E:"Chiffré de bout en bout",thVoice:"Vocal",thVideo:"Vidéo",thOSS:"Open source",thFree:"Gratuit",
+ progress:"Progression",question:"Question",of:"sur",prevQ:"← Question précédente",rk:["Meilleure correspondance","Aussi adapté","À considérer"],
+ yourResult:"Ton résultat",seeCompare:"Voir dans le comparatif",retake:"Refaire le quiz",more:"Afficher plus…",less:"Réduire…",
+ pageTitles:{home:"Quitter Discord : les alternatives",compare:"Comparatif des alternatives à Discord",quiz:"Trouve ton alternative à Discord"},
+ dcLeakText:"4 incidents confirmés depuis 2023 (détail dans « Afficher plus » sur l'accueil)"};
 
-/* Pages */
-var PG=["home","comparatif","quiz"],TT={home:"Quitter Discord : les alternatives",comparatif:"Comparatif des alternatives à Discord",quiz:"Trouve ton alternative à Discord"};
-function route(r){
-  if(!r)r=location.hash.replace(/^#\/?/,"")||"home";
-  if(PG.indexOf(r)<0)r="home";
-  PG.forEach(function(p){document.getElementById("p-"+p).hidden=p!==r});
-  document.querySelectorAll("[data-r]").forEach(function(a){a.dataset.r===r?a.setAttribute("aria-current","page"):a.removeAttribute("aria-current")});
-  document.title=TT[r];window.scrollTo(0,0);
+buildSite("en",S_EN,Q_EN,T_EN);
+buildSite("fr",S_FR,Q_FR,T_FR);
+
+/* Language switch */
+var enRoot=document.getElementById("site-en"),frRoot=document.getElementById("site-fr");
+function setLang(l){
+  enRoot.hidden = l!=="en";
+  frRoot.hidden = l!=="fr";
+  document.documentElement.lang = l;
+  document.title = (l==="en"?T_EN:T_FR).pageTitles[(location.hash.replace(/^#\/?/,"")||"home")] || (l==="en"?T_EN.pageTitles.home:T_FR.pageTitles.home);
+  document.querySelectorAll("[data-setlang]").forEach(function(b){b.setAttribute("aria-pressed",b.dataset.setlang===l?"true":"false")});
+  window.scrollTo(0,0);
 }
-document.addEventListener("click",function(e){
-  var a=e.target.closest('a[href^="#/"]');if(!a)return;
-  e.preventDefault();var r=a.getAttribute("href").replace(/^#\/?/,"")||"home";
-  try{location.hash="/"+(r==="home"?"":r)}catch(x){}
-  route(r);
-});
-window.addEventListener("hashchange",function(){route()});
-route();
+document.querySelectorAll("[data-setlang]").forEach(function(b){b.addEventListener("click",function(){setLang(b.dataset.setlang)})});
+setLang("en");
 </script>
 </body>
 </html>
