@@ -40,3 +40,10 @@ Open an issue describing what's wrong and, where relevant, a source or a screens
 ## Code of conduct
 
 Be respectful and assume good faith. Disagreements about which service deserves a higher trust rating are expected — resolve them with sources, not volume.
+
+## No build process
+
+This project has no npm, webpack, or compilation. Changes are made directly to `index.html`. To test:
+1. Save your changes
+2. Open `index.html` in multiple browsers
+3. Verify nothing broke in existing features
