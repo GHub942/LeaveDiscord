@@ -154,14 +154,68 @@ footer p{margin:.4rem 0 0;max-width:72ch}
 .brand svg{width:20px;height:20px;flex:none}
 .top a[data-r]{text-decoration:none;font-weight:500;padding:.3rem 0;border-bottom:2px solid transparent}
 .top a[aria-current=page]{font-weight:600;border-bottom-color:var(--accent)}
-.langsw{display:inline-flex;gap:.3rem;border:1.5px solid var(--line);border-radius:999px;padding:.2rem}
-.langsw button{font:inherit;font-weight:600;font-size:.85rem;border:0;background:transparent;color:var(--muted);padding:.3rem .7rem;border-radius:999px;cursor:pointer}
-.langsw button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.links{display:flex;flex-wrap:wrap;gap:.25rem 1.5rem}
+.langsw{display:inline-flex;gap:.2rem}
+.langsw button{font:inherit;font-size:1.05rem;line-height:1;border:0;background:transparent;padding:.2rem .35rem;border-radius:8px;cursor:pointer;opacity:.45}
+.langsw button[aria-pressed="true"]{opacity:1;background:var(--surface);box-shadow:0 0 0 1.5px var(--line)}
 .more-toggle{font:inherit;font-weight:600;background:none;border:0;padding:.5rem 0;margin-top:1rem;color:var(--ink);cursor:pointer;text-decoration:underline;text-decoration-color:var(--accent);text-decoration-thickness:2px;text-underline-offset:4px}
 .extra{margin-top:1.25rem}
 .extra .facts{margin-top:0}
 .fair{color:var(--muted);margin:1.25rem 0 0;max-width:70ch}
 .wide{grid-column:1/-1}
+.tw{-webkit-overflow-scrolling:touch}
+.visit{overflow-wrap:anywhere}
+.cmpm{display:none}
+.l-sm{display:none}
+
+@media (max-width:860px){
+  .tw{display:none}
+  .cmpm{display:grid;gap:1.1rem}
+  .cmp{background:var(--surface);border-radius:22px;padding:1.25rem 1.15rem;display:grid;gap:1rem;align-content:start}
+  .cmp h3{font-size:1.3rem;display:flex;align-items:center;justify-content:space-between;gap:.75rem}
+  .cmp .meta{margin:0}
+  .cmpf{list-style:none;margin:0;padding:0;display:grid}
+  .cmpf li{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.55rem 0;border-top:1px solid var(--line)}
+  .cmpf li span{color:var(--muted)}
+  .cmpf li b{font-size:1.1rem}
+  .cmp.ref{background:var(--bg)}
+  .cmp.hl{box-shadow:inset 4px 0 0 var(--accent)}
+}
+
+@media (max-width:560px){
+  .wrap{padding:0 1.15rem}
+  body{font-size:1rem}
+  .hero{padding:3rem 0 .75rem}
+  section.blk{padding:3rem 0 0}
+  .alert,.panel,.quiz{padding:1.75rem 1.4rem;border-radius:24px}
+  .sx{border-radius:24px 24px 24px 6px}
+  .alert h3{font-size:1.45rem}
+  .feat{padding-top:3rem;gap:1.25rem}
+  .facts{gap:1rem}
+  .l-lg{display:none}
+  .l-sm{display:inline}
+  .row summary{padding:1.1rem 0;gap:.75rem}
+  .row h3{font-size:1.35rem}
+  .body{padding-bottom:1.4rem}
+  .steps{gap:.9rem}
+  .steps li{padding-left:2.7rem}
+  .steps li::before{width:1.9rem;height:1.9rem}
+  .top nav{display:grid;grid-template-columns:1fr auto;align-items:center;gap:.5rem .75rem}
+  .brand{margin-right:0;grid-row:1;grid-column:1}
+  .langsw{grid-row:1;grid-column:2;justify-self:end}
+  .links{grid-row:2;grid-column:1/-1;gap:.5rem}
+  .links a[data-r]{flex:1;white-space:nowrap;text-align:center;padding:.55rem .2rem;font-size:.92rem;border:1.5px solid var(--line);border-radius:12px}
+  .links a[aria-current=page]{border-color:var(--accent);border-bottom-color:var(--accent);font-weight:600}
+  .langsw button{padding:.15rem .25rem;font-size:1.15rem}
+  .more-toggle{margin-top:.85rem}
+  footer{margin-top:3.5rem;padding:1.75rem 0 2.5rem}
+}
+@media (max-width:380px){
+  .chips{gap:.4rem}
+  .chip,.opt{padding:.4rem .8rem}
+  .panel .lede{font-size:1.25rem}
+  .cmp{padding:1.1rem .95rem}
+}
 </style>
 </head>
 <body>
@@ -179,12 +233,14 @@ footer p{margin:.4rem 0 0;max-width:72ch}
 <header class="top">
   <nav class="wrap" aria-label="Pages">
     <a class="brand" href="#/home"><svg aria-hidden="true"><use href="#logo"/></svg>Leave Discord</a>
-    <a href="#/home" data-r="home">Home</a>
-    <a href="#/compare" data-r="compare">Compare</a>
-    <a href="#/quiz" data-r="quiz">Find your alternative</a>
+    <div class="links">
+      <a href="#/home" data-r="home">Home</a>
+      <a href="#/compare" data-r="compare">Compare</a>
+      <a href="#/quiz" data-r="quiz"><span class="l-lg">Find your alternative</span><span class="l-sm">Quiz</span></a>
+    </div>
     <span class="langsw" role="group" aria-label="Language">
-      <button data-setlang="en" aria-pressed="true">EN</button>
-      <button data-setlang="fr" aria-pressed="false">FR</button>
+      <button data-setlang="en" aria-pressed="true" aria-label="English">🇬🇧</button>
+      <button data-setlang="fr" aria-pressed="false" aria-label="Français">🇫🇷</button>
     </span>
   </nav>
 </header>
@@ -284,6 +340,7 @@ footer p{margin:.4rem 0 0;max-width:72ch}
     <h2 class="sec" id="t-cmp-en">Comparison</h2>
     <p class="lead">Proton Meet and SimpleX, marked with a green line, sit at the top of the table, right after Discord, which serves as the reference.</p>
     <div class="tw"><table id="tbl-en"></table></div>
+    <div class="cmpm" id="cmpm-en"></div>
   </section>
 </div>
 
@@ -321,12 +378,14 @@ footer p{margin:.4rem 0 0;max-width:72ch}
 <header class="top">
   <nav class="wrap" aria-label="Pages">
     <a class="brand" href="#/home"><svg aria-hidden="true"><use href="#logo"/></svg>Quitter Discord</a>
-    <a href="#/home" data-r="home">Accueil</a>
-    <a href="#/compare" data-r="compare">Comparatif</a>
-    <a href="#/quiz" data-r="quiz">Trouve ton alternative</a>
+    <div class="links">
+      <a href="#/home" data-r="home">Accueil</a>
+      <a href="#/compare" data-r="compare">Comparatif</a>
+      <a href="#/quiz" data-r="quiz"><span class="l-lg">Trouve ton alternative</span><span class="l-sm">Quiz</span></a>
+    </div>
     <span class="langsw" role="group" aria-label="Langue">
-      <button data-setlang="en" aria-pressed="false">EN</button>
-      <button data-setlang="fr" aria-pressed="true">FR</button>
+      <button data-setlang="en" aria-pressed="false" aria-label="English">🇬🇧</button>
+      <button data-setlang="fr" aria-pressed="true" aria-label="Français">🇫🇷</button>
     </span>
   </nav>
 </header>
@@ -426,6 +485,7 @@ footer p{margin:.4rem 0 0;max-width:72ch}
     <h2 class="sec" id="t-cmp-fr">Comparatif</h2>
     <p class="lead">Proton Meet et SimpleX, marqués d'un trait vert, sont en tête du tableau, juste après Discord qui sert de référence.</p>
     <div class="tw"><table id="tbl-fr"></table></div>
+    <div class="cmpm" id="cmpm-fr"></div>
   </section>
 </div>
 
@@ -464,11 +524,13 @@ function buildSite(suf, S, Q, T){
   TL=T.trustLabels,SY=["✗","✓","~"],SL=T.slabels;
   function ic(s){return s.split("").map(function(c){var p=PL[c];return '<svg class="pi" role="img" aria-label="'+p[1]+'"><title>'+p[1]+'</title><use href="#'+p[0]+'"/></svg>'}).join("")}
   function dots(n){var h="";for(var i=1;i<=5;i++)h+='<i'+(i<=n?' class="on"':'')+'></i>';return '<span class="dots" role="img" aria-label="'+T.trustAria+' '+n+'/5">'+h+'</span>'}
-  function meta(s){return '<dl class="meta"><div><dt>'+T.mFounded+'</dt><dd>'+s.c+'</dd></div><div><dt>'+T.mLeaks+'</dt><dd>'+(s.lk?s.lk+' : '+s.lt:T.mNone)+'</dd></div><div><dt>'+T.mTrust+'</dt><dd>'+dots(s.t)+' '+TL[s.t]+'</dd></div><div><dt>'+T.mPlatforms+'</dt><dd>'+ic(s.p)+'</dd></div><div><dt>'+T.mPrice+'</dt><dd>'+s.pr+'</dd></div></dl>'}
+  function meta(s){return '<dl class="meta"><div><dt>'+T.mFounded+'</dt><dd>'+s.c+'</dd></div><div><dt>'+T.mLeaks+'</dt><dd>'+(s.lk?(s.lt?s.lk+' : '+s.lt:s.lk):T.mNone)+'</dd></div><div><dt>'+T.mTrust+'</dt><dd>'+dots(s.t)+' '+TL[s.t]+'</dd></div><div><dt>'+T.mPlatforms+'</dt><dd>'+ic(s.p)+'</dd></div><div><dt>'+T.mPrice+'</dt><dd>'+s.pr+'</dd></div></dl>'}
   var rowsEl=document.getElementById("rows-"+suf),tblEl=document.getElementById("tbl-"+suf),quizEl=document.getElementById("quiz-"+suf);
   document.querySelectorAll("#site-"+suf+" .meta-slot").forEach(function(e){e.innerHTML=meta(S.filter(function(s){return s.id===e.dataset.id})[0])});
   rowsEl.innerHTML=S.filter(function(s){return !s.f&&s.u}).map(function(s){return '<li class="row" data-tags="'+s.x+'"><details><summary><span><h3>'+s.n+'</h3><span class="kind">'+s.k+'</span></span>'+dots(s.t)+'</summary><div class="body"><p>'+s.d+'</p><ul class="pc"><li class="pro">'+s.pro+'</li><li class="con">'+s.con+'</li></ul>'+meta(s)+'<a class="visit" href="'+s.u+'" target="_blank" rel="noopener">'+T.official+'</a></div></details></li>'}).join("");
   tblEl.innerHTML='<caption>'+T.tblCaption+'</caption><thead><tr><th scope="col" style="text-align:left;padding-left:1.25rem">'+T.thService+'</th><th scope="col">'+T.thFounded+'</th><th scope="col">'+T.thLeaks+'</th><th scope="col">'+T.thTrust+'</th><th scope="col">'+T.thE2E+'</th><th scope="col">'+T.thVoice+'</th><th scope="col">'+T.thVideo+'</th><th scope="col">'+T.thOSS+'</th><th scope="col">'+T.thFree+'</th></tr></thead><tbody>'+S.map(function(s){return '<tr'+(s.id==="dc"?' class="ref"':s.f?' class="hl"':'')+'><th scope="row">'+s.n+'</th><td>'+s.c+'</td><td>'+s.lk+'</td><td>'+dots(s.t)+'</td>'+s.tb.map(function(v){return '<td class="v'+v+'" aria-label="'+SL[v]+'">'+SY[v]+'</td>'}).join("")+'</tr>'}).join("")+'</tbody>';
+  var FE=[["thE2E",0],["thVoice",1],["thVideo",2],["thOSS",3],["thFree",4]];
+  document.getElementById("cmpm-"+suf).innerHTML=S.map(function(s){return '<article class="cmp'+(s.id==="dc"?' ref':s.f?' hl':'')+'"><h3>'+s.n+' '+dots(s.t)+'</h3>'+meta(s)+'<ul class="cmpf">'+s.tb.map(function(v,i){return '<li><span>'+T[FE[i][0]]+'</span><b class="v'+v+'" aria-label="'+SL[v]+'">'+SY[v]+'</b></li>'}).join("")+'</ul></article>'}).join("");
 
   var chips=document.querySelectorAll("#site-"+suf+" .chip"),rows=document.querySelectorAll("#site-"+suf+" .row");
   chips.forEach(function(c){c.addEventListener("click",function(){
@@ -524,7 +586,7 @@ function buildSite(suf, S, Q, T){
 }
 
 var S_EN=[
-{id:"dc",n:"Discord (reference)",c:"2015",lk:4,t:2,tb:[2,1,1,0,1]},
+{id:"dc",n:"Discord (reference)",c:"2015",lk:4,t:2,p:"AaWxw",pr:"Free; Nitro from $2.99/mo",tb:[2,1,1,0,1]},
 {id:"pm",f:1,n:"Proton Meet",k:"Encrypted video conferencing",u:"https://proton.me/meet",c:"2026",lk:0,t:4,p:"AaWxw",pr:"Free (1 h, 50 people); Pro from $7.99/mo",tb:[1,1,1,1,1]},
 {id:"sx",f:1,n:"SimpleX",k:"Messaging with no identifier",u:"https://simplex.chat",c:"2022",lk:0,t:5,p:"AaWx",pr:"Free",tb:[1,1,1,1,1]},
 {id:"st",n:"Stoat",k:"Closest to Discord (formerly Revolt)",c:"2021",lk:0,t:3,p:"AaWxw",pr:"Free",tb:[0,1,2,1,1],x:"self",u:"https://stoat.chat",
@@ -592,7 +654,7 @@ var T_EN={iOS:"iOS / macOS",Android:"Android",trustLabels:["","","Low","Medium",
  pageTitles:{home:"Leaving Discord: the best alternatives",compare:"Comparing Discord alternatives",quiz:"Find your Discord alternative"}};
 
 var S_FR=[
-{id:"dc",n:"Discord (référence)",c:"2015",lk:4,t:2,tb:[2,1,1,0,1]},
+{id:"dc",n:"Discord (référence)",c:"2015",lk:4,t:2,p:"AaWxw",pr:"Gratuit ; Nitro dès 2,99 $/mois",tb:[2,1,1,0,1]},
 {id:"pm",f:1,n:"Proton Meet",k:"Visioconférence chiffrée",u:"https://proton.me/meet",c:"2026",lk:0,t:4,p:"AaWxw",pr:"Gratuit (1 h, 50 pers.) ; Pro dès 7,99 $/mois",tb:[1,1,1,1,1]},
 {id:"sx",f:1,n:"SimpleX",k:"Messagerie sans identifiant",u:"https://simplex.chat",c:"2022",lk:0,t:5,p:"AaWx",pr:"Gratuit",tb:[1,1,1,1,1]},
 {id:"st",n:"Stoat",k:"Le plus proche de Discord (ex-Revolt)",c:"2021",lk:0,t:3,p:"AaWxw",pr:"Gratuit",tb:[0,1,2,1,1],x:"self",u:"https://stoat.chat",
