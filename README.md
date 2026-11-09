@@ -1,8 +1,7 @@
 # Leave Discord
 
-> **This project is complete.** The site is finished and will not receive
-> further modifications. It remains available as-is for anyone looking for
-> Discord alternatives.
+> **This repository is frozen.** The site is complete and will not receive
+> further modifications.
 
 A single self-contained HTML page comparing privacy-friendly alternatives to Discord — featuring **Proton Meet** (closest match, secure and accessible) and **SimpleX** (ultimate anonymity), plus ten more options.
 
@@ -28,4 +27,4 @@ Founding dates, leak counts, and trust ratings are editorial and were accurate a
 
 ## License
 
-Released under the [MIT License](LICENSE.md).
+MIT — see [LICENSE.md](LICENSE.md).
