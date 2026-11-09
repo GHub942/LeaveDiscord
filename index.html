@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Privacy-friendly alternatives to Discord: Proton Meet, SimpleX, Element, Signal, and more — compared in English and French.">
 <title>Leave Discord: the best alternatives</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'>%3Crect width='32' height='32' rx='8' fill='%230F7A63'/%3E%3Crect x='9' y='6' width='4' height='19' rx='1' fill='white'/%3E%3Crect x='9' y='23' width='11' height='4' rx='1' fill='white'/%3E%3Cpath d='M13 7C23 7 25 10.5 25 15C25 19.5 23 20 13 20' fill='none' stroke='white' stroke-width='4.1' stroke-linecap='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -308,7 +309,7 @@ footer p{margin:.4rem 0 0;max-width:72ch}
 
 <footer>
   <div class="wrap">
-    <p>Page last updated on 09/24/2026 at 17:50:07.</p>
+    <p>Page last updated on 11/09/2026 at 23:54:00.</p>
     <p>Leaks: major public incidents we were able to identify, non-exhaustive list. "Trust" is an editorial score out of 5 based on open-source code, encryption, audits, and leak history. Features change fast: check each service's own site for details before you migrate.</p>
   </div>
 </footer>
@@ -450,7 +451,7 @@ footer p{margin:.4rem 0 0;max-width:72ch}
 
 <footer>
   <div class="wrap">
-    <p>Page mise à jour le 24/09/2026 à 17:50:07.</p>
+    <p>Page mise à jour le 09/11/2026 à 23:54:00.</p>
     <p>Fuites : incidents publics majeurs que nous avons pu recenser, liste non exhaustive. « Confiance » est une note éditoriale sur 5 fondée sur le code ouvert, le chiffrement, les audits et l'historique de fuites. Les fonctionnalités évoluent vite : vérifie les détails sur le site de chaque service avant de migrer.</p>
   </div>
 </footer>
@@ -461,7 +462,6 @@ footer p{margin:.4rem 0 0;max-width:72ch}
 function buildSite(suf, S, Q, T){
   var PL={A:["pA",T.iOS],a:["pa",T.Android],W:["pW","Windows"],x:["px","Linux"],w:["pw","Web"]},
   TL=T.trustLabels,SY=["✗","✓","~"],SL=T.slabels;
-  S[0].lt=T.dcLeakText;
   function ic(s){return s.split("").map(function(c){var p=PL[c];return '<svg class="pi" role="img" aria-label="'+p[1]+'"><title>'+p[1]+'</title><use href="#'+p[0]+'"/></svg>'}).join("")}
   function dots(n){var h="";for(var i=1;i<=5;i++)h+='<i'+(i<=n?' class="on"':'')+'></i>';return '<span class="dots" role="img" aria-label="'+T.trustAria+' '+n+'/5">'+h+'</span>'}
   function meta(s){return '<dl class="meta"><div><dt>'+T.mFounded+'</dt><dd>'+s.c+'</dd></div><div><dt>'+T.mLeaks+'</dt><dd>'+(s.lk?s.lk+' : '+s.lt:T.mNone)+'</dd></div><div><dt>'+T.mTrust+'</dt><dd>'+dots(s.t)+' '+TL[s.t]+'</dd></div><div><dt>'+T.mPlatforms+'</dt><dd>'+ic(s.p)+'</dd></div><div><dt>'+T.mPrice+'</dt><dd>'+s.pr+'</dd></div></dl>'}
@@ -525,7 +525,7 @@ function buildSite(suf, S, Q, T){
 
 var S_EN=[
 {id:"dc",n:"Discord (reference)",c:"2015",lk:4,t:2,tb:[2,1,1,0,1]},
-{id:"pm",f:1,n:"Proton Meet",k:"Encrypted video conferencing",u:"https://proton.me/meet",c:"2026",lk:0,t:4,p:"Aaw",pr:"Free (1 h, 50 people); Pro from $7.99/mo",tb:[1,1,1,1,1]},
+{id:"pm",f:1,n:"Proton Meet",k:"Encrypted video conferencing",u:"https://proton.me/meet",c:"2026",lk:0,t:4,p:"AaWxw",pr:"Free (1 h, 50 people); Pro from $7.99/mo",tb:[1,1,1,1,1]},
 {id:"sx",f:1,n:"SimpleX",k:"Messaging with no identifier",u:"https://simplex.chat",c:"2022",lk:0,t:5,p:"AaWx",pr:"Free",tb:[1,1,1,1,1]},
 {id:"st",n:"Stoat",k:"Closest to Discord (formerly Revolt)",c:"2021",lk:0,t:3,p:"AaWxw",pr:"Free",tb:[0,1,2,1,1],x:"self",u:"https://stoat.chat",
  d:"Servers, channels, roles, emojis: the layout feels like Discord's. Open source, and you can self-host it.",pro:"Instant pickup for anyone used to Discord.",con:"No end-to-end encryption; young project, run by a small team."},
@@ -589,12 +589,11 @@ var T_EN={iOS:"iOS / macOS",Android:"Android",trustLabels:["","","Low","Medium",
  thService:"Service",thFounded:"Founded",thLeaks:"Leaks",thTrust:"Trust",thE2E:"End-to-end encrypted",thVoice:"Voice",thVideo:"Video",thOSS:"Open source",thFree:"Free",
  progress:"Progress",question:"Question",of:"of",prevQ:"← Previous question",rk:["Best match","Also a good fit","Worth considering"],
  yourResult:"Your result",seeCompare:"See in the comparison",retake:"Retake the quiz",more:"Show more…",less:"Show less…",
- pageTitles:{home:"Leaving Discord: the best alternatives",compare:"Comparing Discord alternatives",quiz:"Find your Discord alternative"},
- dcLeakText:"4 confirmed incidents since 2023 (full timeline in \u201cShow more\u201d on the home page)"};
+ pageTitles:{home:"Leaving Discord: the best alternatives",compare:"Comparing Discord alternatives",quiz:"Find your Discord alternative"}};
 
 var S_FR=[
 {id:"dc",n:"Discord (référence)",c:"2015",lk:4,t:2,tb:[2,1,1,0,1]},
-{id:"pm",f:1,n:"Proton Meet",k:"Visioconférence chiffrée",u:"https://proton.me/meet",c:"2026",lk:0,t:4,p:"Aaw",pr:"Gratuit (1 h, 50 pers.) ; Pro dès 7,99 $/mois",tb:[1,1,1,1,1]},
+{id:"pm",f:1,n:"Proton Meet",k:"Visioconférence chiffrée",u:"https://proton.me/meet",c:"2026",lk:0,t:4,p:"AaWxw",pr:"Gratuit (1 h, 50 pers.) ; Pro dès 7,99 $/mois",tb:[1,1,1,1,1]},
 {id:"sx",f:1,n:"SimpleX",k:"Messagerie sans identifiant",u:"https://simplex.chat",c:"2022",lk:0,t:5,p:"AaWx",pr:"Gratuit",tb:[1,1,1,1,1]},
 {id:"st",n:"Stoat",k:"Le plus proche de Discord (ex-Revolt)",c:"2021",lk:0,t:3,p:"AaWxw",pr:"Gratuit",tb:[0,1,2,1,1],x:"self",u:"https://stoat.chat",
  d:"Serveurs, salons, rôles, emojis : l'organisation ressemble à celle de Discord. Open source, on peut l'héberger soi-même.",pro:"Prise en main immédiate pour les habitués de Discord.",con:"Pas de chiffrement de bout en bout ; projet jeune, porté par une petite équipe."},
@@ -658,8 +657,7 @@ var T_FR={iOS:"iOS / macOS",Android:"Android",trustLabels:["","","Faible","Moyen
  thService:"Service",thFounded:"Créé",thLeaks:"Fuites",thTrust:"Confiance",thE2E:"Chiffré de bout en bout",thVoice:"Vocal",thVideo:"Vidéo",thOSS:"Open source",thFree:"Gratuit",
  progress:"Progression",question:"Question",of:"sur",prevQ:"← Question précédente",rk:["Meilleure correspondance","Aussi adapté","À considérer"],
  yourResult:"Ton résultat",seeCompare:"Voir dans le comparatif",retake:"Refaire le quiz",more:"Afficher plus…",less:"Réduire…",
- pageTitles:{home:"Quitter Discord : les alternatives",compare:"Comparatif des alternatives à Discord",quiz:"Trouve ton alternative à Discord"},
- dcLeakText:"4 incidents confirmés depuis 2023 (détail dans « Afficher plus » sur l'accueil)"};
+ pageTitles:{home:"Quitter Discord : les alternatives",compare:"Comparatif des alternatives à Discord",quiz:"Trouve ton alternative à Discord"}};
 
 buildSite("en",S_EN,Q_EN,T_EN);
 buildSite("fr",S_FR,Q_FR,T_FR);

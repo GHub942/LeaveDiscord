@@ -1,5 +1,9 @@
 # Leave Discord
 
+> **This project is complete.** The site is finished and will not receive
+> further modifications. It remains available as-is for anyone looking for
+> Discord alternatives.
+
 A single self-contained HTML page comparing privacy-friendly alternatives to Discord — featuring **Proton Meet** (closest match, secure and accessible) and **SimpleX** (ultimate anonymity), plus ten more options.
 
 Available in English (default) and French, with an in-page language switch — no build step, no dependencies, no tracking.
@@ -20,7 +24,7 @@ This is a static, single-file site: open `index.html` (or whatever you've named 
 
 ## Data & accuracy
 
-Founding dates, leak counts, and trust ratings are editorial and were accurate as of the last update noted in the page footer. Service features change quickly — always check each service's own site before migrating a community. See [CONTRIBUTING.md](CONTRIBUTING.md) if you'd like to help keep this up to date.
+Founding dates, leak counts, and trust ratings are editorial and were accurate as of the last update noted in the page footer. Service features change quickly — always check each service's own site before migrating a community.
 
 ## License
 
